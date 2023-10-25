@@ -10,6 +10,12 @@ fi
 if [[ ${target_platform} =~ osx.* ]]; then
     export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
 fi
+# MPI variants
+if [[ ${mpi} == "nompi" ]]; then
+    export AMREX_MPI=OFF
+else
+    export AMREX_MPI=ON
+fi
 
 # configure
 cmake \
