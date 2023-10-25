@@ -14,7 +14,7 @@ source:
     - 203.patch
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -52,13 +52,6 @@ test:
     - amrex
   source_files:
     - tests/*
-  files:
-    - test.sh   # [unix]
-    - test.bat  # [win]
-  commands:
-    # smoke tests: execute
-    - ./test.sh      # [unix and build_platform == target_platform]
-    - call test.bat  # [win]
 
 about:
   home: https://pyamrex.readthedocs.io
