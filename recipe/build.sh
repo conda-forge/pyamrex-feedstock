@@ -16,6 +16,13 @@ if [[ ${mpi} == "nompi" ]]; then
 else
     export AMREX_MPI=ON
 fi
+# CMake cannot find OpenMPI when cross-compiling for arm64 on macOS
+if [[ "$mpi" == "openmpi" &&
+      ${target_platform} =~ osx.* &&
+      "${CONDA_BUILD_CROSS_COMPILATION:-}" == "1" ]]; then
+
+    export OPAL_PREFIX=${PREFIX}
+fi
 
 # configure
 cmake \
