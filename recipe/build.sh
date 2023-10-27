@@ -27,4 +27,5 @@ cmake \
     -DPYINSTALLOPTIONS="--no-build-isolation"
 
 # build, pack & install
+cmake --build build --parallel ${CPU_COUNT} --target install
 cmake --build build --parallel ${CPU_COUNT} --target pip_install_nodeps

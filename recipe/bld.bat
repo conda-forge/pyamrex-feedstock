@@ -21,5 +21,7 @@ cmake ^
 if errorlevel 1 exit 1
 
 :: build, pack & install
+cmake --build build --config Release --parallel %CPU_COUNT% --target install
+if errorlevel 1 exit 1
 cmake --build build --config Release --parallel %CPU_COUNT% --target pip_install_nodeps
 if errorlevel 1 exit 1
