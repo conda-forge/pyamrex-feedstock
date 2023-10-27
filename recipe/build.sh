@@ -10,6 +10,19 @@ fi
 if [[ ${target_platform} =~ osx.* ]]; then
     export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
 fi
+# MPI variants
+if [[ ${mpi} == "nompi" ]]; then
+    export AMREX_MPI=OFF
+else
+    export AMREX_MPI=ON
+fi
+# CMake cannot find OpenMPI when cross-compiling for arm64 on macOS
+if [[ "$mpi" == "openmpi" &&
+      ${target_platform} =~ osx.* &&
+      "${CONDA_BUILD_CROSS_COMPILATION:-}" == "1" ]]; then
+
+    export OPAL_PREFIX=${PREFIX}
+fi
 
 # configure
 cmake \
