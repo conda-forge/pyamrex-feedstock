@@ -1,0 +1,241 @@
+From 6a0ba29bfda984036c1feb06ce46feb780c5ac8e Mon Sep 17 00:00:00 2001
+From: Axel Huebl <axel.huebl@plasma.ninja>
+Date: Thu, 26 Oct 2023 01:30:21 -0700
+Subject: [PATCH 1/2] Install: CMake Config & Targets
+
+Install the CMake package files for consumption of CMake targets
+in downstream projects.
+
+We will in the future expose public headers for downstream projects
+as well that will help us to compile templated classes, such as
+particle containers, targeted in the downstream repo instead of
+collecting all known usage here in upstream.
+---
+ CMakeLists.txt                 | 42 ++++++++++++++++++++--------------
+ cmake/dependencies/AMReX.cmake |  2 +-
+ pyAMReXConfig.cmake.in         | 40 ++++++++++++++++++++++++++++++++
+ 3 files changed, 66 insertions(+), 18 deletions(-)
+ create mode 100644 pyAMReXConfig.cmake.in
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index f149535..807b5cf 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -194,13 +194,21 @@ set_cxx_warnings()
+ # Generate Configuration and .pc Files ########################################
+ #
+ # these files are used if pyAMReX is installed and picked up by a downstream
+-# project (not needed yet)
++# project
++include(CMakePackageConfigHelpers)
++configure_package_config_file(
++    ${pyAMReX_SOURCE_DIR}/pyAMReXConfig.cmake.in
++    ${pyAMReX_BINARY_DIR}/pyAMReXConfig.cmake
++    INSTALL_DESTINATION ${pyAMReX_INSTALL_CMAKEDIR}
++    #PATH_VARS MODULE_PATH
++    # We have our own check_required_components
++    NO_CHECK_REQUIRED_COMPONENTS_MACRO
++)
+ 
+-#include(CMakePackageConfigHelpers)
+-#write_basic_package_version_file("pyAMReXConfigVersion.cmake"
+-#    VERSION ${pyAMReX_VERSION}
+-#    COMPATIBILITY SameMajorVersion
+-#)
++write_basic_package_version_file("pyAMReXConfigVersion.cmake"
++    VERSION ${pyAMReX_VERSION}
++    COMPATIBILITY SameMinorVersion
++)
+ 
+ 
+ # Installs ####################################################################
+@@ -220,17 +228,17 @@ install(TARGETS ${pyAMReX_INSTALL_TARGET_NAMES}
+ )
+ 
+ # CMake package file for find_package(pyAMReX) in depending projects
+-#install(EXPORT pyAMReXTargets
+-#    FILE pyAMReXTargets.cmake
+-#    NAMESPACE pyAMReX::
+-#    DESTINATION ${pyAMReX_INSTALL_CMAKEDIR}
+-#)
+-#install(
+-#    FILES
+-#        ${pyAMReX_BINARY_DIR}/pyAMReXConfig.cmake
+-#        ${pyAMReX_BINARY_DIR}/pyAMReXConfigVersion.cmake
+-#    DESTINATION ${pyAMReX_INSTALL_CMAKEDIR}
+-#)
++install(EXPORT pyAMReXTargets
++    FILE pyAMReXTargets.cmake
++    NAMESPACE pyAMReX::
++    DESTINATION ${pyAMReX_INSTALL_CMAKEDIR}
++)
++install(
++    FILES
++        ${pyAMReX_BINARY_DIR}/pyAMReXConfig.cmake
++        ${pyAMReX_BINARY_DIR}/pyAMReXConfigVersion.cmake
++    DESTINATION ${pyAMReX_INSTALL_CMAKEDIR}
++)
+ 
+ 
+ # pip helpers for the amrex package ###########################################
+diff --git a/cmake/dependencies/AMReX.cmake b/cmake/dependencies/AMReX.cmake
+index 033ce89..a71856b 100644
+--- a/cmake/dependencies/AMReX.cmake
++++ b/cmake/dependencies/AMReX.cmake
+@@ -85,7 +85,7 @@ option(pyAMReX_amrex_internal "Download & build AMReX" ON)
+ set(pyAMReX_amrex_repo "https://github.com/AMReX-Codes/amrex.git"
+     CACHE STRING
+     "Repository URI to pull and build AMReX from if(pyAMReX_amrex_internal)")
+-set(pyAMReX_amrex_branch "23.10"
++set(pyAMReX_amrex_branch "be6c6415467d09da6109d27cfa218868abc1f9db"
+     CACHE STRING
+     "Repository branch for pyAMReX_amrex_repo if(pyAMReX_amrex_internal)")
+ 
+diff --git a/pyAMReXConfig.cmake.in b/pyAMReXConfig.cmake.in
+new file mode 100644
+index 0000000..f929ff1
+--- /dev/null
++++ b/pyAMReXConfig.cmake.in
+@@ -0,0 +1,40 @@
++@PACKAGE_INIT@
++
++# only add PUBLIC dependencies as well
++#   https://cmake.org/cmake/help/latest/manual/cmake-packages.7.html#creating-a-package-configuration-file
++include(CMakeFindDependencyMacro)
++
++# Search in <PackageName>_ROOT:
++#   https://cmake.org/cmake/help/v3.12/policy/CMP0074.html
++if(POLICY CMP0074)
++    cmake_policy(SET CMP0074 NEW)
++endif()
++
++# General options
++set(pyAMReX_SPACEDIM                  @AMReX_SPACEDIM@)
++set(_search_amrex_dim)
++foreach(D IN LISTS AMReX_SPACEDIM)
++    set(pyAMReX_${D}D_FOUND   ON)
++    set(_search_amrex_dim ${_search_amrex_dim} "${D}D")
++endforeach()
++
++find_dependency(AMReX COMPONENTS ${_search_amrex_dim})
++
++set(pyAMReX_MPI                       @AMReX_MPI@)
++set(pyAMReX_OMP                       @AMReX_OMP@)
++set(pyAMReX_CUDA                      @AMReX_CUDA@)
++set(pyAMReX_SYCL                      @AMReX_SYCL@)
++set(pyAMReX_HIP                       @AMReX_HIP@)
++set(pyAMReX_GPU_BACKEND               @AMReX_GPU_BACKEND@)
++
++# define central pyAMReX::pyAMReX_${D}d targets
++include("${CMAKE_CURRENT_LIST_DIR}/pyAMReXTargets.cmake")
++
++# check if components are fulfilled and set pyAMReX_<COMPONENT>_FOUND vars
++foreach(comp ${pyAMReX_FIND_COMPONENTS})
++    if(NOT pyAMReX_${comp}_FOUND)
++        if(pyAMReX_FIND_REQUIRED_${comp})
++            set(pyAMReX_FOUND FALSE)
++        endif()
++    endif()
++endforeach()
+
+From 0aa659824083ead76268aa586b739a56988a855e Mon Sep 17 00:00:00 2001
+From: ax3l <ax3l@users.noreply.github.com>
+Date: Thu, 26 Oct 2023 17:58:19 +0000
+Subject: [PATCH 2/2] Update Stub Files
+
+---
+ src/amrex/space1d/__init__.pyi                 | 2 +-
+ src/amrex/space1d/amrex_1d_pybind/__init__.pyi | 4 ++--
+ src/amrex/space2d/__init__.pyi                 | 2 +-
+ src/amrex/space2d/amrex_2d_pybind/__init__.pyi | 4 ++--
+ src/amrex/space3d/__init__.pyi                 | 2 +-
+ src/amrex/space3d/amrex_3d_pybind/__init__.pyi | 4 ++--
+ 6 files changed, 9 insertions(+), 9 deletions(-)
+
+diff --git a/src/amrex/space1d/__init__.pyi b/src/amrex/space1d/__init__.pyi
+index 8f1d092..4cb241e 100644
+--- a/src/amrex/space1d/__init__.pyi
++++ b/src/amrex/space1d/__init__.pyi
+@@ -492,4 +492,4 @@ def d_decl(x, y, z):
+ 
+ __author__: str = "Axel Huebl, Ryan T. Sandberg, Shreyas Ananthan, David P. Grote, Revathi Jambunathan, Edoardo Zoni, Remi Lehe, Andrew Myers, Weiqun Zhang"
+ __license__: str = "BSD-3-Clause-LBNL"
+-__version__: str = "23.10"
++__version__: str = "23.10-22-gbe6c6415467d"
+diff --git a/src/amrex/space1d/amrex_1d_pybind/__init__.pyi b/src/amrex/space1d/amrex_1d_pybind/__init__.pyi
+index a11152f..dd1d6e4 100644
+--- a/src/amrex/space1d/amrex_1d_pybind/__init__.pyi
++++ b/src/amrex/space1d/amrex_1d_pybind/__init__.pyi
+@@ -3575,7 +3575,7 @@ class BoxArray:
+     def size(self) -> int: ...
+ 
+ class Config:
+-    amrex_version: typing.ClassVar[str] = "23.10"
++    amrex_version: typing.ClassVar[str] = "23.10-22-gbe6c6415467d"
+     gpu_backend = None
+     have_gpu: typing.ClassVar[bool] = False
+     have_mpi: typing.ClassVar[bool] = True
+@@ -10853,4 +10853,4 @@ def write_single_level_plotfile(
+ 
+ __author__: str = "Axel Huebl, Ryan T. Sandberg, Shreyas Ananthan, David P. Grote, Revathi Jambunathan, Edoardo Zoni, Remi Lehe, Andrew Myers, Weiqun Zhang"
+ __license__: str = "BSD-3-Clause-LBNL"
+-__version__: str = "23.10"
++__version__: str = "23.10-22-gbe6c6415467d"
+diff --git a/src/amrex/space2d/__init__.pyi b/src/amrex/space2d/__init__.pyi
+index ad6840d..a00eb6a 100644
+--- a/src/amrex/space2d/__init__.pyi
++++ b/src/amrex/space2d/__init__.pyi
+@@ -492,4 +492,4 @@ def d_decl(x, y, z):
+ 
+ __author__: str = "Axel Huebl, Ryan T. Sandberg, Shreyas Ananthan, David P. Grote, Revathi Jambunathan, Edoardo Zoni, Remi Lehe, Andrew Myers, Weiqun Zhang"
+ __license__: str = "BSD-3-Clause-LBNL"
+-__version__: str = "23.10"
++__version__: str = "23.10-22-gbe6c6415467d"
+diff --git a/src/amrex/space2d/amrex_2d_pybind/__init__.pyi b/src/amrex/space2d/amrex_2d_pybind/__init__.pyi
+index f016283..a4a60c9 100644
+--- a/src/amrex/space2d/amrex_2d_pybind/__init__.pyi
++++ b/src/amrex/space2d/amrex_2d_pybind/__init__.pyi
+@@ -3575,7 +3575,7 @@ class BoxArray:
+     def size(self) -> int: ...
+ 
+ class Config:
+-    amrex_version: typing.ClassVar[str] = "23.10"
++    amrex_version: typing.ClassVar[str] = "23.10-22-gbe6c6415467d"
+     gpu_backend = None
+     have_gpu: typing.ClassVar[bool] = False
+     have_mpi: typing.ClassVar[bool] = True
+@@ -10870,4 +10870,4 @@ def write_single_level_plotfile(
+ 
+ __author__: str = "Axel Huebl, Ryan T. Sandberg, Shreyas Ananthan, David P. Grote, Revathi Jambunathan, Edoardo Zoni, Remi Lehe, Andrew Myers, Weiqun Zhang"
+ __license__: str = "BSD-3-Clause-LBNL"
+-__version__: str = "23.10"
++__version__: str = "23.10-22-gbe6c6415467d"
+diff --git a/src/amrex/space3d/__init__.pyi b/src/amrex/space3d/__init__.pyi
+index 0f4aad7..9143116 100644
+--- a/src/amrex/space3d/__init__.pyi
++++ b/src/amrex/space3d/__init__.pyi
+@@ -492,4 +492,4 @@ def d_decl(x, y, z):
+ 
+ __author__: str = "Axel Huebl, Ryan T. Sandberg, Shreyas Ananthan, David P. Grote, Revathi Jambunathan, Edoardo Zoni, Remi Lehe, Andrew Myers, Weiqun Zhang"
+ __license__: str = "BSD-3-Clause-LBNL"
+-__version__: str = "23.10"
++__version__: str = "23.10-22-gbe6c6415467d"
+diff --git a/src/amrex/space3d/amrex_3d_pybind/__init__.pyi b/src/amrex/space3d/amrex_3d_pybind/__init__.pyi
+index b34edd7..018e855 100644
+--- a/src/amrex/space3d/amrex_3d_pybind/__init__.pyi
++++ b/src/amrex/space3d/amrex_3d_pybind/__init__.pyi
+@@ -3575,7 +3575,7 @@ class BoxArray:
+     def size(self) -> int: ...
+ 
+ class Config:
+-    amrex_version: typing.ClassVar[str] = "23.10"
++    amrex_version: typing.ClassVar[str] = "23.10-22-gbe6c6415467d"
+     gpu_backend = None
+     have_gpu: typing.ClassVar[bool] = False
+     have_mpi: typing.ClassVar[bool] = True
+@@ -10894,4 +10894,4 @@ def write_single_level_plotfile(
+ 
+ __author__: str = "Axel Huebl, Ryan T. Sandberg, Shreyas Ananthan, David P. Grote, Revathi Jambunathan, Edoardo Zoni, Remi Lehe, Andrew Myers, Weiqun Zhang"
+ __license__: str = "BSD-3-Clause-LBNL"
+-__version__: str = "23.10"
++__version__: str = "23.10-22-gbe6c6415467d"

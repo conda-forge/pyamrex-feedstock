@@ -12,9 +12,12 @@ source:
     # Adds pip_install_nodeps target, part of 23.11+
     #   https://github.com/AMReX-Codes/pyamrex/pull/203
     - 203.patch
+    # https://github.com/AMReX-Codes/pyamrex/pull/217
+    #   https://github.com/AMReX-Codes/pyamrex/pull/217
+    - 217.patch
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
