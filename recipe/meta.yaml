@@ -1,6 +1,6 @@
 {% set name = "pyamrex" %}
 {% set version = "23.10" %}
-{% set build = 6 %}
+{% set build = 7 %}
 
 # ensure mpi is defined (needed for conda-smithy recipe-lint)
 {% set mpi = mpi or 'nompi' %}
@@ -70,7 +70,7 @@ requirements:
     # wrappers are bash scripts and wrappers in build can't use host libraries.
     - openmpi  # [mpi == "openmpi" and (build_platform != target_platform)]
   host:
-    - amrex {{ version }} {{ mpi_prefix }}_*
+    - amrex >={{ version }} {{ mpi_prefix }}_*
     - {{ mpi }}  # [mpi != 'nompi']
     - numpy
     - pip
@@ -79,7 +79,7 @@ requirements:
     - setuptools
     - wheel
   run:
-    - amrex {{ version }} {{ mpi_prefix }}_*
+    - amrex >={{ version }} {{ mpi_prefix }}_*
     - {{ mpi }}  # [mpi != 'nompi']
     - mpi4py     # [mpi != 'nompi']
     - {{ pin_compatible('numpy') }}
