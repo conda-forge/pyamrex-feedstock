@@ -1,6 +1,6 @@
 {% set name = "pyamrex" %}
-{% set version = "23.10" %}
-{% set build = 8 %}
+{% set version = "23.11" %}
+{% set build = 0 %}
 
 # ensure mpi is defined (needed for conda-smithy recipe-lint)
 {% set mpi = mpi or 'nompi' %}
@@ -16,14 +16,7 @@ package:
 
 source:
   url: https://github.com/AMReX-Codes/pyamrex/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 44dd3ab467260ea797dec4fcb939599fad811e8ac598bdc0ab05da24369606fa
-  patches:
-    # Adds pip_install_nodeps target, part of 23.11+
-    #   https://github.com/AMReX-Codes/pyamrex/pull/203
-    - 203.patch
-    # https://github.com/AMReX-Codes/pyamrex/pull/217
-    #   https://github.com/AMReX-Codes/pyamrex/pull/217
-    - 217.patch
+  sha256: baff9589cd42a9a98e89ae3985139a471a8524e875523168b0a4e96131315151
 
 build:
   number: {{ build }}
@@ -60,8 +53,7 @@ requirements:
     - make          # [unix]
     - ninja         # [win]
     - libgomp       # [linux]
-    - llvm-openmp   # [osx]
-    - intel-openmp  # [win]
+    - llvm-openmp   # [osx or win]
     - pkgconfig
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
