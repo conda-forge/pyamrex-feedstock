@@ -1,5 +1,5 @@
 {% set name = "pyamrex" %}
-{% set version = "24.02" %}
+{% set version = "24.03" %}
 {% set build = 0 %}
 
 # ensure mpi is defined (needed for conda-smithy recipe-lint)
@@ -16,7 +16,7 @@ package:
 
 source:
   url: https://github.com/AMReX-Codes/pyamrex/archive/refs/tags/{{ version }}.tar.gz
-  sha256: c750b319882cd57ade77626f759d85b2a85187805326959437cb6b3b037db4a0
+  sha256: bf85b4ad35b623278cbaae2c07e22138545dec0732d15c4ab7c53be76a7f2315
 
 build:
   number: {{ build }}
