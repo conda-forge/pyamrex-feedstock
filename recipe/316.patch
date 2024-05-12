@@ -1,0 +1,34 @@
+From 39c215205a6bc2a411039c4686af3c69c3d38a1b Mon Sep 17 00:00:00 2001
+From: Axel Huebl <axel.huebl@plasma.ninja>
+Date: Sun, 12 May 2024 15:51:02 -0700
+Subject: [PATCH] Build: MPMD w/ MPI Only
+
+```
+[ 60%] Building CXX object CMakeFiles/pyAMReX_2d.dir/src/Base/MPMD.cpp.o
+$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-c++ -DAMREX_SPACEDIM=2 -DpyAMReX_2d_EXPORTS -I$SRC_DIR/src -I$PREFIX/share/amrex/C_scripts -isystem $PREFIX/include/python3.10 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/pyamrex-24.05 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix -Wall -Wextra -Wpedantic -Wshadow -Woverloaded-virtual -Wunreachable-code -O3 -DNDEBUG -std=c++17 -fPIC -fvisibility=hidden -pthread -fopenmp -flto -fno-fat-lto-objects -MD -MT CMakeFiles/pyAMReX_2d.dir/src/Base/MPMD.cpp.o -MF CMakeFiles/pyAMReX_2d.dir/src/Base/MPMD.cpp.o.d -o CMakeFiles/pyAMReX_2d.dir/src/Base/MPMD.cpp.o -c $SRC_DIR/src/Base/MPMD.cpp
+/home/conda/feedstock_root/build_artifacts/pyamrex_1715553474293/work/src/Base/MPMD.cpp:11:10: fatal error: AMReX_MPMD.H: No such file or directory
+   11 | #include <AMReX_MPMD.H>
+      |          ^~~~~~~~~~~~~~
+```
+---
+ src/Base/CMakeLists.txt | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+diff --git a/src/Base/CMakeLists.txt b/src/Base/CMakeLists.txt
+index fc06664b..5a8169eb 100644
+--- a/src/Base/CMakeLists.txt
++++ b/src/Base/CMakeLists.txt
+@@ -33,6 +33,12 @@ foreach(D IN LISTS AMReX_SPACEDIM)
+         Utility.cpp
+         Vector.cpp
+         Version.cpp
+-        MPMD.cpp
+     )
++
++    if (AMReX_MPI)
++        target_sources(pyAMReX_${D}d
++          PRIVATE
++            MPMD.cpp
++        )
++    endif()
+ endforeach()

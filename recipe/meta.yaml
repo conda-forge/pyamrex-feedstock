@@ -17,6 +17,9 @@ package:
 source:
   url: https://github.com/AMReX-Codes/pyamrex/archive/refs/tags/{{ version }}.tar.gz
   sha256: 557aef0a0bfe76cbf6e91d6be3d01c16c75f717a6400b83358beea7cbea2b42c
+  patches:
+    # Build: MPMD w/ MPI Only
+    - 316.patch
 
 build:
   number: {{ build }}
