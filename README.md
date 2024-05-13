@@ -13,11 +13,11 @@ Development: https://github.com/AMReX-Codes/pyamrex
 
 Documentation: https://pyamrex.readthedocs.io
 
-The Python binding pyAMReX bridges the worlds of block-structured codes and
-data science: it provides zero-copy application GPU data access for AI/ML,
-in situ analysis, application coupling and enables rapid, massively
-parallel prototyping. pyAMReX enhances the Block-Structured AMR Software
-Framework AMReX and its applications.
+The Python binding pyAMReX bridges the compute in AMReX block-structured
+codes and data science: it provides zero-copy application GPU data access
+for AI/ML, in situ analysis, application coupling and enables rapid,
+massively parallel prototyping. pyAMReX enhances the Block-Structured AMR
+Software Framework AMReX and its applications.
 AMReX is a software framework containing all the functionality to write
 massively parallel, block-structured adaptive mesh refinement (AMR)
 applications.
