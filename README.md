@@ -41,13 +41,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_mpimpichnumpy1.22python3.10.____cpythonpython_implcpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpimpichnumpy1.22python3.10.____cpythonpython_implcpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_mpimpichnumpy1.22python3.8.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
@@ -55,31 +48,31 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpimpichnumpy1.22python3.9.____cpythonpython_implcpython</td>
+              <td>linux_64_mpimpichnumpy2.0python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpimpichnumpy1.22python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpimpichnumpy2.0python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpimpichnumpy1.23python3.11.____cpythonpython_implcpython</td>
+              <td>linux_64_mpimpichnumpy2.0python3.11.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpimpichnumpy1.23python3.11.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpimpichnumpy2.0python3.11.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpimpichnumpy1.26python3.12.____cpythonpython_implcpython</td>
+              <td>linux_64_mpimpichnumpy2.0python3.12.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpimpichnumpy1.26python3.12.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpimpichnumpy2.0python3.12.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpinompinumpy1.22python3.10.____cpythonpython_implcpython</td>
+              <td>linux_64_mpimpichnumpy2.0python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpinompinumpy1.22python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpimpichnumpy2.0python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -90,31 +83,31 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpinompinumpy1.22python3.9.____cpythonpython_implcpython</td>
+              <td>linux_64_mpinompinumpy2.0python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpinompinumpy1.22python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpinompinumpy2.0python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpinompinumpy1.23python3.11.____cpythonpython_implcpython</td>
+              <td>linux_64_mpinompinumpy2.0python3.11.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpinompinumpy1.23python3.11.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpinompinumpy2.0python3.11.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpinompinumpy1.26python3.12.____cpythonpython_implcpython</td>
+              <td>linux_64_mpinompinumpy2.0python3.12.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpinompinumpy1.26python3.12.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpinompinumpy2.0python3.12.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpiopenmpinumpy1.22python3.10.____cpythonpython_implcpython</td>
+              <td>linux_64_mpinompinumpy2.0python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpiopenmpinumpy1.22python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpinompinumpy2.0python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -125,31 +118,31 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpiopenmpinumpy1.22python3.9.____cpythonpython_implcpython</td>
+              <td>linux_64_mpiopenmpinumpy2.0python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpiopenmpinumpy1.22python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpiopenmpinumpy2.0python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpiopenmpinumpy1.23python3.11.____cpythonpython_implcpython</td>
+              <td>linux_64_mpiopenmpinumpy2.0python3.11.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpiopenmpinumpy1.23python3.11.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpiopenmpinumpy2.0python3.11.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpiopenmpinumpy1.26python3.12.____cpythonpython_implcpython</td>
+              <td>linux_64_mpiopenmpinumpy2.0python3.12.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpiopenmpinumpy1.26python3.12.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpiopenmpinumpy2.0python3.12.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_mpimpichnumpy1.22python3.10.____cpythonpython_implcpython</td>
+              <td>linux_64_mpiopenmpinumpy2.0python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpimpichnumpy1.22python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpiopenmpinumpy2.0python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -160,31 +153,31 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_mpimpichnumpy1.22python3.9.____cpythonpython_implcpython</td>
+              <td>linux_aarch64_mpimpichnumpy2.0python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpimpichnumpy1.22python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpimpichnumpy2.0python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_mpimpichnumpy1.23python3.11.____cpythonpython_implcpython</td>
+              <td>linux_aarch64_mpimpichnumpy2.0python3.11.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpimpichnumpy1.23python3.11.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpimpichnumpy2.0python3.11.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_mpimpichnumpy1.26python3.12.____cpythonpython_implcpython</td>
+              <td>linux_aarch64_mpimpichnumpy2.0python3.12.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpimpichnumpy1.26python3.12.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpimpichnumpy2.0python3.12.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_mpinompinumpy1.22python3.10.____cpythonpython_implcpython</td>
+              <td>linux_aarch64_mpimpichnumpy2.0python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpinompinumpy1.22python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpimpichnumpy2.0python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -195,31 +188,31 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_mpinompinumpy1.22python3.9.____cpythonpython_implcpython</td>
+              <td>linux_aarch64_mpinompinumpy2.0python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpinompinumpy1.22python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpinompinumpy2.0python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_mpinompinumpy1.23python3.11.____cpythonpython_implcpython</td>
+              <td>linux_aarch64_mpinompinumpy2.0python3.11.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpinompinumpy1.23python3.11.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpinompinumpy2.0python3.11.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_mpinompinumpy1.26python3.12.____cpythonpython_implcpython</td>
+              <td>linux_aarch64_mpinompinumpy2.0python3.12.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpinompinumpy1.26python3.12.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpinompinumpy2.0python3.12.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_mpiopenmpinumpy1.22python3.10.____cpythonpython_implcpython</td>
+              <td>linux_aarch64_mpinompinumpy2.0python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpiopenmpinumpy1.22python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpinompinumpy2.0python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -230,31 +223,31 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_mpiopenmpinumpy1.22python3.9.____cpythonpython_implcpython</td>
+              <td>linux_aarch64_mpiopenmpinumpy2.0python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpiopenmpinumpy1.22python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpiopenmpinumpy2.0python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_mpiopenmpinumpy1.23python3.11.____cpythonpython_implcpython</td>
+              <td>linux_aarch64_mpiopenmpinumpy2.0python3.11.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpiopenmpinumpy1.23python3.11.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpiopenmpinumpy2.0python3.11.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_mpiopenmpinumpy1.26python3.12.____cpythonpython_implcpython</td>
+              <td>linux_aarch64_mpiopenmpinumpy2.0python3.12.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpiopenmpinumpy1.26python3.12.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpiopenmpinumpy2.0python3.12.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpimpichnumpy1.22python3.10.____cpythonpython_implcpython</td>
+              <td>linux_aarch64_mpiopenmpinumpy2.0python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichnumpy1.22python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpiopenmpinumpy2.0python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -265,31 +258,31 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpimpichnumpy1.22python3.9.____cpythonpython_implcpython</td>
+              <td>linux_ppc64le_mpimpichnumpy2.0python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichnumpy1.22python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichnumpy2.0python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpimpichnumpy1.23python3.11.____cpythonpython_implcpython</td>
+              <td>linux_ppc64le_mpimpichnumpy2.0python3.11.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichnumpy1.23python3.11.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichnumpy2.0python3.11.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpimpichnumpy1.26python3.12.____cpythonpython_implcpython</td>
+              <td>linux_ppc64le_mpimpichnumpy2.0python3.12.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichnumpy1.26python3.12.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichnumpy2.0python3.12.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpinompinumpy1.22python3.10.____cpythonpython_implcpython</td>
+              <td>linux_ppc64le_mpimpichnumpy2.0python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompinumpy1.22python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichnumpy2.0python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -300,31 +293,31 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpinompinumpy1.22python3.9.____cpythonpython_implcpython</td>
+              <td>linux_ppc64le_mpinompinumpy2.0python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompinumpy1.22python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompinumpy2.0python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpinompinumpy1.23python3.11.____cpythonpython_implcpython</td>
+              <td>linux_ppc64le_mpinompinumpy2.0python3.11.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompinumpy1.23python3.11.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompinumpy2.0python3.11.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpinompinumpy1.26python3.12.____cpythonpython_implcpython</td>
+              <td>linux_ppc64le_mpinompinumpy2.0python3.12.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompinumpy1.26python3.12.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompinumpy2.0python3.12.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpiopenmpinumpy1.22python3.10.____cpythonpython_implcpython</td>
+              <td>linux_ppc64le_mpinompinumpy2.0python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpinumpy1.22python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompinumpy2.0python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -335,31 +328,31 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpiopenmpinumpy1.22python3.9.____cpythonpython_implcpython</td>
+              <td>linux_ppc64le_mpiopenmpinumpy2.0python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpinumpy1.22python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpinumpy2.0python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpiopenmpinumpy1.23python3.11.____cpythonpython_implcpython</td>
+              <td>linux_ppc64le_mpiopenmpinumpy2.0python3.11.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpinumpy1.23python3.11.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpinumpy2.0python3.11.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpiopenmpinumpy1.26python3.12.____cpythonpython_implcpython</td>
+              <td>linux_ppc64le_mpiopenmpinumpy2.0python3.12.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpinumpy1.26python3.12.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpinumpy2.0python3.12.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichnumpy1.22python3.10.____cpythonpython_implcpython</td>
+              <td>linux_ppc64le_mpiopenmpinumpy2.0python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichnumpy1.22python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpinumpy2.0python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -370,31 +363,31 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichnumpy1.22python3.9.____cpythonpython_implcpython</td>
+              <td>osx_64_mpimpichnumpy2.0python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichnumpy1.22python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichnumpy2.0python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichnumpy1.23python3.11.____cpythonpython_implcpython</td>
+              <td>osx_64_mpimpichnumpy2.0python3.11.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichnumpy1.23python3.11.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichnumpy2.0python3.11.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichnumpy1.26python3.12.____cpythonpython_implcpython</td>
+              <td>osx_64_mpimpichnumpy2.0python3.12.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichnumpy1.26python3.12.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichnumpy2.0python3.12.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpinompinumpy1.22python3.10.____cpythonpython_implcpython</td>
+              <td>osx_64_mpimpichnumpy2.0python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompinumpy1.22python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichnumpy2.0python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -405,31 +398,31 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpinompinumpy1.22python3.9.____cpythonpython_implcpython</td>
+              <td>osx_64_mpinompinumpy2.0python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompinumpy1.22python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompinumpy2.0python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpinompinumpy1.23python3.11.____cpythonpython_implcpython</td>
+              <td>osx_64_mpinompinumpy2.0python3.11.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompinumpy1.23python3.11.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompinumpy2.0python3.11.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpinompinumpy1.26python3.12.____cpythonpython_implcpython</td>
+              <td>osx_64_mpinompinumpy2.0python3.12.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompinumpy1.26python3.12.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompinumpy2.0python3.12.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpinumpy1.22python3.10.____cpythonpython_implcpython</td>
+              <td>osx_64_mpinompinumpy2.0python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpinumpy1.22python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompinumpy2.0python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -440,31 +433,31 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpinumpy1.22python3.9.____cpythonpython_implcpython</td>
+              <td>osx_64_mpiopenmpinumpy2.0python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpinumpy1.22python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpinumpy2.0python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpinumpy1.23python3.11.____cpythonpython_implcpython</td>
+              <td>osx_64_mpiopenmpinumpy2.0python3.11.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpinumpy1.23python3.11.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpinumpy2.0python3.11.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpinumpy1.26python3.12.____cpythonpython_implcpython</td>
+              <td>osx_64_mpiopenmpinumpy2.0python3.12.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpinumpy1.26python3.12.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpinumpy2.0python3.12.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpimpichnumpy1.22python3.10.____cpython</td>
+              <td>osx_64_mpiopenmpinumpy2.0python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichnumpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpinumpy2.0python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -475,31 +468,31 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpimpichnumpy1.22python3.9.____cpython</td>
+              <td>osx_arm64_mpimpichnumpy2.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichnumpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichnumpy2.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpimpichnumpy1.23python3.11.____cpython</td>
+              <td>osx_arm64_mpimpichnumpy2.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichnumpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichnumpy2.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpimpichnumpy1.26python3.12.____cpython</td>
+              <td>osx_arm64_mpimpichnumpy2.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichnumpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichnumpy2.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpinompinumpy1.22python3.10.____cpython</td>
+              <td>osx_arm64_mpimpichnumpy2.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpinompinumpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichnumpy2.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -510,31 +503,31 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpinompinumpy1.22python3.9.____cpython</td>
+              <td>osx_arm64_mpinompinumpy2.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpinompinumpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpinompinumpy2.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpinompinumpy1.23python3.11.____cpython</td>
+              <td>osx_arm64_mpinompinumpy2.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpinompinumpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpinompinumpy2.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpinompinumpy1.26python3.12.____cpython</td>
+              <td>osx_arm64_mpinompinumpy2.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpinompinumpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpinompinumpy2.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpiopenmpinumpy1.22python3.10.____cpython</td>
+              <td>osx_arm64_mpinompinumpy2.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpinumpy1.22python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpinompinumpy2.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -545,31 +538,31 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpiopenmpinumpy1.22python3.9.____cpython</td>
+              <td>osx_arm64_mpiopenmpinumpy2.0python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpinumpy1.22python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpinumpy2.0python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpiopenmpinumpy1.23python3.11.____cpython</td>
+              <td>osx_arm64_mpiopenmpinumpy2.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpinumpy1.23python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpinumpy2.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpiopenmpinumpy1.26python3.12.____cpython</td>
+              <td>osx_arm64_mpiopenmpinumpy2.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpinumpy1.26python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpinumpy2.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_numpy1.22python3.10.____cpythonpython_implcpython</td>
+              <td>osx_arm64_mpiopenmpinumpy2.0python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy1.22python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpinumpy2.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -580,24 +573,31 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_numpy1.22python3.9.____cpythonpython_implcpython</td>
+              <td>win_64_numpy2.0python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy1.22python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy2.0python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_numpy1.23python3.11.____cpythonpython_implcpython</td>
+              <td>win_64_numpy2.0python3.11.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy1.23python3.11.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy2.0python3.11.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_numpy1.26python3.12.____cpythonpython_implcpython</td>
+              <td>win_64_numpy2.0python3.12.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy1.26python3.12.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy2.0python3.12.____cpythonpython_implcpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_numpy2.0python3.9.____cpythonpython_implcpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy2.0python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr>
