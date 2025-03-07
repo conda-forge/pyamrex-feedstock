@@ -1,0 +1,139 @@
+# ensure mpi is defined (needed for conda-smithy recipe-lint)
+# prioritize nompi variant via build number
+schema_version: 1
+
+context:
+  name: pyamrex
+  version: 25.03
+  build: 0
+  mpi: ${{ mpi or "nompi" }}  # is this still needed?
+  mpi_prefix: ${{ "nompi" if mpi == "nompi" else "mpi_" + mpi }}
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/AMReX-Codes/pyamrex/archive/refs/tags/${{ version }}.tar.gz
+  sha256: 5a65545d46b49dd3f2bca2647a174c3ee0384e49791dc3e335a3a39d9a045350
+
+build:
+  skip: python_impl == "pypy"
+  # add build string so packages can depend on
+  # mpi or nompi variants
+  # dependencies:
+  # `pkg * mpi_mpich_*` for mpich
+  # `pkg * mpi_*` for any mpi
+  number: ${{ build | int + 100 if mpi == "nompi" else build }}
+  string: ${{ mpi_prefix }}_py${{ python | version_to_buildstring }}h${{ hash }}_${{ build | int + 100 if mpi == "nompi" else build }}
+
+requirements:
+  build:
+    - if: build_platform != target_platform
+      then:
+        - python
+        - cross-python_${{ target_platform }}
+        - pybind11
+    - ${{ compiler('c') }}
+    - ${{ stdlib("c") }}
+    - ${{ compiler('cxx') }}
+    - if: unix
+      then: make
+    - if: win
+      then:
+        - clang
+        - lld
+        - llvm-openmp
+        - ninja
+    - if: osx
+      then: llvm-openmp
+    - cmake
+    - curl
+    - pkg-config
+    # In OpenMPI, the compiler wrappers are binaries and the wrappers in build
+    # can use host libraries by adding OPAL_PREFIX and in mpich, compiler
+    # wrappers are bash scripts and wrappers in build can't use host libraries.
+    - if: "mpi == 'openmpi' and (build_platform != target_platform)"
+      then: openmpi
+
+  host:
+    - amrex >=${{ version }}[build=${{ mpi_prefix }}_*]
+    - if: "mpi != 'nompi'"
+      then: ${{ mpi }}
+    - python
+    - pybind11
+    - numpy
+    - pip
+    - pybind11
+    - pybind11-abi
+    - python
+    - setuptools
+    - wheel
+  run:
+    - amrex >=${{ version }}[build=${{ mpi_prefix }}_*]
+    - if: "mpi != 'nompi'"
+      then:
+        - ${{ mpi }}
+        - mpi4py
+    - python
+    - if: osx
+      then: libcxx
+  run_exports:
+    # strict runtime dependency on build-time MPI flavor
+    - ${{ name }} * ${{ mpi_prefix }}_*
+    # Releases are not (yet) compatible:
+    # There is no ABI compatibility check or guarantee between AMReX releases.
+    - pyamrex ==${{ version }}
+
+tests:
+  - python:
+      imports:
+        - amrex
+      pip_check: false
+  - script:
+      - if: win
+        then: set "OMP_NUM_THREADS=2"
+      - if: unix
+        then: export OMP_NUM_THREADS=2
+      - if: "mpi == 'mpich'"
+        then: export HYDRA_LAUNCHER=fork
+      - if: "mpi == 'openmpi'"
+        then: |
+          export OMPI_MCA_btl=self,tcp
+          export OMPI_MCA_plm=isolated
+          export OMPI_MCA_rmaps_base_oversubscribe=yes
+          export OMPI_MCA_btl_vader_single_copy_mechanism=none
+      - python -m pytest ./tests
+    requirements:
+      run:
+        - pytest
+    files:
+      source:
+        - tests/
+
+about:
+  license: BSD-3-Clause-LBNL
+  license_file: LICENSE
+  summary: GPU-Enabled, Zero-Copy AMReX Python Bindings including AI/ML
+  description: |
+    The Python binding pyAMReX bridges the compute in AMReX block-structured
+    codes and data science: it provides zero-copy application GPU data access
+    for AI/ML, in situ analysis, application coupling and enables rapid,
+    massively parallel prototyping. pyAMReX enhances the Block-Structured AMR
+    Software Framework AMReX and its applications.
+    AMReX is a software framework containing all the functionality to write
+    massively parallel, block-structured adaptive mesh refinement (AMR)
+    applications.
+  homepage: https://pyamrex.readthedocs.io
+  repository: ttps://github.com/AMReX-Codes/pyamrex
+  documentation: https://pyamrex.readthedocs.io
+
+extra:
+  recipe-maintainers:
+    - atmyers
+    - ax3l
+    - dpgrote
+    - EZoni
+    - RemiLehe
+    - roelof-groenewald
+    - WeiqunZhang
