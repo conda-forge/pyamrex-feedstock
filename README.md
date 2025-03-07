@@ -3,15 +3,15 @@ About pyamrex-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyamrex-feedstock/blob/main/LICENSE.txt)
 
-Home: https://pyamrex.readthedocs.io
+Home: https://pyamrex.readthedocs.io/
 
 Package license: BSD-3-Clause-LBNL
 
 Summary: GPU-Enabled, Zero-Copy AMReX Python Bindings including AI/ML
 
-Development: https://github.com/AMReX-Codes/pyamrex
+Development: ttps://github.com/AMReX-Codes/pyamrex
 
-Documentation: https://pyamrex.readthedocs.io
+Documentation: https://pyamrex.readthedocs.io/
 
 The Python binding pyAMReX bridges the compute in AMReX block-structured
 codes and data science: it provides zero-copy application GPU data access
@@ -21,7 +21,6 @@ Software Framework AMReX and its applications.
 AMReX is a software framework containing all the functionality to write
 massively parallel, block-structured adaptive mesh refinement (AMR)
 applications.
-
 
 Current build status
 ====================
@@ -729,6 +728,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@EZoni](https://github.com/EZoni/)
 * [@RemiLehe](https://github.com/RemiLehe/)
 * [@WeiqunZhang](https://github.com/WeiqunZhang/)
 * [@atmyers](https://github.com/atmyers/)
