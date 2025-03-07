@@ -125,7 +125,7 @@ about:
     massively parallel, block-structured adaptive mesh refinement (AMR)
     applications.
   homepage: https://pyamrex.readthedocs.io
-  repository: ttps://github.com/AMReX-Codes/pyamrex
+  repository: https://github.com/AMReX-Codes/pyamrex
   documentation: https://pyamrex.readthedocs.io
 
 extra:
