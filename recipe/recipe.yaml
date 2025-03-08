@@ -45,6 +45,8 @@ requirements:
         - lld
         - llvm-openmp
         - ninja
+    - if: linux
+      then: libgomp
     - if: osx
       then: llvm-openmp
     - cmake
