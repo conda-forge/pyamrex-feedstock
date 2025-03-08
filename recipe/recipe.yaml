@@ -50,7 +50,6 @@ requirements:
     - if: osx
       then: llvm-openmp
     - cmake
-    - curl
     - pkg-config
     # In OpenMPI, the compiler wrappers are binaries and the wrappers in build
     # can use host libraries by adding OPAL_PREFIX and in mpich, compiler
