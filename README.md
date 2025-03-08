@@ -9,7 +9,7 @@ Package license: BSD-3-Clause-LBNL
 
 Summary: GPU-Enabled, Zero-Copy AMReX Python Bindings including AI/ML
 
-Development: ttps://github.com/AMReX-Codes/pyamrex
+Development: https://github.com/AMReX-Codes/pyamrex
 
 Documentation: https://pyamrex.readthedocs.io/
 
