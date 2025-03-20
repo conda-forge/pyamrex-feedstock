@@ -5,7 +5,7 @@ schema_version: 1
 context:
   name: pyamrex
   version: 25.03
-  build: 0
+  build: 1
   mpi: ${{ mpi or "nompi" }}  # is this still needed?
   mpi_prefix: ${{ "nompi" if mpi == "nompi" else "mpi_" + mpi }}
 
