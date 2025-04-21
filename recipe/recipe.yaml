@@ -18,13 +18,10 @@ source:
   sha256: 2c765d581f21170ea26a5eb50bdd2c9151d2dbed9f1002dc25e62f38ed6220c0
 
 build:
-  skip:
-    - if: target_platform == "linux-aarch64" and mpi == "mpich" and python == "3.13" and numpy.startswith("2")
-      then: true
-    - if: target_platform == "linux-aarch64" and mpi == "openmpi" and python == "3.13" and numpy.startswith("2")
-      then: true
-    - if: python_impl == "pypy"
-      then: true
+  skip: >
+    python_impl == "pypy" or
+    (target_platform == "linux-aarch64" and mpi == "mpich" and match(python, "3.13.*")) or
+    (target_platform == "linux-aarch64" and mpi == "openmpi" and match(python, "3.13.*"))
   # add build string so packages can depend on
   # mpi or nompi variants
   # dependencies:
