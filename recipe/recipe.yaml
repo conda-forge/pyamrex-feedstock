@@ -18,7 +18,7 @@ source:
   sha256: 199833993c743144d76e3c42e174665142320f846a6f3be636bf4f6511354550
 
 build:
-  skip: python_impl == "pypy" or (target_platform == "linux-aarch64" and python == "3.13.* *_cp313")
+  skip: python_impl == "pypy"
   # add build string so packages can depend on
   # mpi or nompi variants
   # dependencies:
