@@ -1,0 +1,547 @@
+From f316fce4df929a0fec3056f4cf9221aadc772398 Mon Sep 17 00:00:00 2001
+From: Axel Huebl <axel.huebl@plasma.ninja>
+Date: Thu, 31 Jul 2025 11:57:56 -0700
+Subject: [PATCH 1/8] `setup.py`: AMREX_PARTICLE_PRECISION Env
+
+Control for pip builds from env var.
+---
+ setup.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 719df33a..45cf7e37 100644
+--- a/setup.py
++++ b/setup.py
+@@ -95,7 +95,7 @@ def build_extension(self, ext):
+             "-DAMReX_GPU_BACKEND=" + AMReX_GPU_BACKEND,
+             "-DAMReX_MPI:BOOL=" + AMReX_MPI,
+             "-DAMReX_PRECISION=" + AMReX_PRECISION,
+-            #'-DAMReX_PARTICLES_PRECISION=' + AMReX_PARTICLES_PRECISION,
++            "-DAMReX_PARTICLES_PRECISION=" + AMReX_PARTICLES_PRECISION,
+             "-DpyAMReX_CCACHE=" + PYAMREX_CCACHE,
+             "-DpyAMReX_IPO=" + PYAMREX_IPO,
+             ## dependency control (developers & package managers)
+@@ -174,6 +174,7 @@ def build_extension(self, ext):
+ AMReX_GPU_BACKEND = os.environ.get("AMREX_GPU_BACKEND", "NONE")
+ AMReX_MPI = os.environ.get("AMREX_MPI", "OFF")
+ AMReX_PRECISION = os.environ.get("AMREX_PRECISION", "DOUBLE")
++AMReX_PARTICLES_PRECISION = os.environ.get("AMREX_PARTICLES_PRECISION", "DOUBLE")
+ #   single value or as a list 1;2;3
+ AMReX_SPACEDIM = os.environ.get("AMREX_SPACEDIM", "1;2;3")
+ BUILD_SHARED_LIBS = os.environ.get("AMREX_BUILD_SHARED_LIBS", "OFF")
+
+From 04ef2a12b7a4f57c7241d0895534c9160b38ad8c Mon Sep 17 00:00:00 2001
+From: Axel Huebl <axel.huebl@plasma.ninja>
+Date: Thu, 31 Jul 2025 11:58:42 -0700
+Subject: [PATCH 2/8] CI: Single Precision Run
+
+---
+ .github/workflows/ubuntu.yml | 50 ++++++++++++++++++++++++++++++++++++
+ 1 file changed, 50 insertions(+)
+
+diff --git a/.github/workflows/ubuntu.yml b/.github/workflows/ubuntu.yml
+index 9f2e8301..462cd69a 100644
+--- a/.github/workflows/ubuntu.yml
++++ b/.github/workflows/ubuntu.yml
+@@ -199,6 +199,56 @@ jobs:
+       run: |
+         python3 -m pytest tests/
+ 
++  clang_sp:
++    name: Clang@18.0 w/ SP
++    runs-on: ubuntu-24.04
++    env:
++      CXXFLAGS: "-Werror -Wshadow -Woverloaded-virtual -Wextra-semi -Wunreachable-code -fno-operator-names -Wno-pass-failed"
++      LDFLAGS: "-fuse-ld=lld"
++      CXX: "clang++"
++      CC: "clang"
++      AMReX_PRECISION: "SINGLE"
++      AMReX_PARTICLES_PRECISION: "SINGLE"
++    steps:
++      - uses: actions/checkout@v4
++      - name: Dependencies
++        run: |
++          .github/workflows/dependencies/dependencies_clang18.sh
++          .github/workflows/dependencies/dependencies_ccache.sh
++      - name: Set Up Cache
++        uses: actions/cache@v4
++        with:
++          path: ~/.cache/ccache
++          key: ccache-${{ github.workflow }}-${{ github.job }}-git-${{ github.sha }}
++          restore-keys: |
++            ccache-${{ github.workflow }}-${{ github.job }}-git-
++      - name: Build & Install
++        run: |
++          export CCACHE_COMPRESS=1
++          export CCACHE_COMPRESSLEVEL=10
++          export CCACHE_MAXSIZE=300M
++          ccache -z
++
++          export CMAKE_BUILD_PARALLEL_LEVEL=4
++
++          export CC=$(which clang-18)
++          export CXX=$(which clang++-18)
++          python3 -m pip install -U pip
++          python3 -m pip install -U build packaging setuptools[core] wheel
++          python3 -m pip install -U cmake
++          python3 -m pip install -U pandas pytest
++          python3 -m pip install -v .
++          python3 -c "import amrex.space1d as amr; print(amr.__version__)"
++          python3 -c "import amrex.space2d as amr; print(amr.__version__)"
++          python3 -c "import amrex.space3d as amr; print(amr.__version__)"
++
++          ccache -s
++          du -hs ~/.cache/ccache
++
++      - name: Unit tests
++        run: |
++          python3 -m pytest tests/
++
+   nvcc11:
+     name: CUDA@12.2 GNU@10.5
+     runs-on: ubuntu-24.04
+
+From 6d30b550bc2f985436a0ebba0008eb517ff75f63 Mon Sep 17 00:00:00 2001
+From: Axel Huebl <axel.huebl@plasma.ninja>
+Date: Thu, 31 Jul 2025 12:28:29 -0700
+Subject: [PATCH 3/8] Fix Tests: Simple Tolerances
+
+And annotate harder issues in AoS.
+---
+ tests/test_aos.py               |  2 +-
+ tests/test_parmparse.py         |  4 +++-
+ tests/test_particle.py          | 24 ++++++++++++++++++------
+ tests/test_particleContainer.py | 14 ++++++++------
+ tests/test_particleTile.py      |  2 +-
+ tests/test_realbox.py           |  6 ++++--
+ tests/test_realvect.py          | 16 ++++++++++------
+ 7 files changed, 45 insertions(+), 23 deletions(-)
+
+diff --git a/tests/test_aos.py b/tests/test_aos.py
+index ca1d2af2..5f66948a 100644
+--- a/tests/test_aos.py
++++ b/tests/test_aos.py
+@@ -79,7 +79,7 @@ def test_array_interface():
+     assert (
+         np.isclose(arr[0][0], 1.0)
+         and np.isclose(arr[0][4], 5.2)
+-        and np.isclose(arr[0][6], 6)
++        and np.isclose(arr[0][6], 6)  # fixme in SP: reads int32(0)
+     )
+     assert (
+         np.isclose(arr[1][2], 10)
+diff --git a/tests/test_parmparse.py b/tests/test_parmparse.py
+index 59bb6507..a6d7cd27 100644
+--- a/tests/test_parmparse.py
++++ b/tests/test_parmparse.py
+@@ -1,6 +1,8 @@
+ # -*- coding: utf-8 -*-
+ import os
+ 
++import numpy as np
++
+ import amrex.space3d as amr
+ 
+ 
+@@ -14,7 +16,7 @@ def test_parmparse():
+     dopml = pp_param.get_bool("do_pml")
+ 
+     assert dopml
+-    assert dt == 1.0e-5
++    assert np.isclose(dt, 1.0e-5)
+     assert ncell == 100
+ 
+     pp.pretty_print_table()
+diff --git a/tests/test_particle.py b/tests/test_particle.py
+index dff7b269..e49e7104 100644
+--- a/tests/test_particle.py
++++ b/tests/test_particle.py
+@@ -37,19 +37,31 @@ def test_particle_init():
+ def test_particle_set():
+     p1 = amr.Particle_8_0()
+     p1.setPos(1, 1.5)
+-    assert p1.pos(0) == 0 and p1.pos(1) == 1.5 and p1.pos(2) == 0
++    assert (
++        np.isclose(p1.pos(0), 0)
++        and np.isclose(p1.pos(1), 1.5)
++        and np.isclose(p1.pos(2), 0)
++    )
+     p1.setPos([1.0, 1, 2])
+-    assert p1.pos(0) == 1 and p1.pos(1) == 1 and p1.pos(2) == 2
++    assert (
++        np.isclose(p1.pos(0), 1)
++        and np.isclose(p1.pos(1), 1)
++        and np.isclose(p1.pos(2), 2)
++    )
+     p1.setPos(amr.RealVect(2, 3.3, 4.2))
+-    assert p1.pos(0) == 2 and p1.pos(1) == 3.3 and p1.pos(2) == 4.2
++    assert (
++        np.isclose(p1.pos(0), 2)
++        and np.isclose(p1.pos(1), 3.3)
++        and np.isclose(p1.pos(2), 4.2)
++    )
+ 
+     print(p1.x, p1.y, p1.z)
+     p1.x = 2.1
+-    assert p1.x == 2.1
++    assert np.isclose(p1.x, 2.1)
+     p1.y = 3.2
+-    assert p1.y == 3.2
++    assert np.isclose(p1.y, 3.2)
+     p1.z = 5.1
+-    assert p1.z == 5.1
++    assert np.isclose(p1.z, 5.1)
+ 
+ 
+ def test_rdata():
+diff --git a/tests/test_particleContainer.py b/tests/test_particleContainer.py
+index 4174c870..b6eb52b2 100644
+--- a/tests/test_particleContainer.py
++++ b/tests/test_particleContainer.py
+@@ -251,10 +251,10 @@ def test_pc_init():
+ 
+             aos = pti.aos()
+             aos_arr = aos.to_numpy()
+-            assert aos[0].x == 0.30
+-            assert aos[0].y == 0.35
+-            assert aos[0].z == 0.40
+-            assert aos_arr[0]["z"] == 0.40
++            assert np.isclose(aos[0].x, 0.30)
++            assert np.isclose(aos[0].y, 0.35)
++            assert np.isclose(aos[0].z, 0.40)
++            assert np.isclose(aos_arr[0]["z"], 0.40)
+ 
+             soa = pti.soa()
+             real_arrays = soa.get_real_data()
+@@ -294,7 +294,9 @@ def test_particle_init(Npart, particle_container):
+             assert int_arrays[0][0] == 1
+             assert isinstance(aos_arr[0]["rdata_0"], np.floating)
+             assert isinstance(aos_arr[0]["idata_0"], np.integer)
+-            assert np.isclose(aos_arr[0]["rdata_0"], 0.5) and aos_arr[0]["idata_0"] == 5
++            assert (
++                np.isclose(aos_arr[0]["rdata_0"], 0.5) and aos_arr[0]["idata_0"] == 5
++            )  # fixme in SP: random value np.int32(-2147483648) == 5
+ 
+             aos_arr[0]["idata_0"] = 2
+             aos1 = pt.get_array_of_structs()
+@@ -362,7 +364,7 @@ def test_per_cell(empty_particle_container, std_geometry, std_particle):
+         pc.total_number_of_particles() == pc.number_of_particles_at_level(0) == ncells
+     )
+     print("npts * real_1", ncells * std_particle.real_array_data[1])
+-    assert ncells * std_particle.real_array_data[1] == sum_1
++    assert np.isclose(ncells * std_particle.real_array_data[1], sum_1)
+ 
+ 
+ def test_soa_pc_numpy(soa_particle_container, Npart):
+diff --git a/tests/test_particleTile.py b/tests/test_particleTile.py
+index 6c81732f..5e1abe6c 100644
+--- a/tests/test_particleTile.py
++++ b/tests/test_particleTile.py
+@@ -111,7 +111,7 @@ def test_ptile_soa():
+     ar1 = np.array(rdata[1], copy=False)
+     ir0 = np.array(idata[0], copy=False)
+     print(ar0.dtype)
+-    assert ar0.dtype == "float"
++    assert ar0.dtype == "float" or ar0.dtype == "float32"
+     assert ir0.dtype == "int32"
+     print("---------")
+     ir0[0] = -55
+diff --git a/tests/test_realbox.py b/tests/test_realbox.py
+index 8e80d924..0619ad00 100644
+--- a/tests/test_realbox.py
++++ b/tests/test_realbox.py
+@@ -1,5 +1,7 @@
+ # -*- coding: utf-8 -*-
+ 
++import numpy as np
++
+ import amrex.space3d as amr
+ from amrex.space3d import RealVect as RV
+ from amrex.space3d import XDim3
+@@ -14,9 +16,9 @@ def test_realbox_empty():
+ 
+     rb.setLo([-1, -2, -3])
+     rb.setHi([0, 0, 0])
+-    assert rb.volume() == 6
++    assert np.isclose(rb.volume(), 6)
+     rb.setHi(0, 1.2)
+-    assert rb.hi(0) == 1.2
++    assert np.isclose(rb.hi(0), 1.2)
+ 
+ 
+ def test_realbox_frombox(std_box):
+diff --git a/tests/test_realvect.py b/tests/test_realvect.py
+index 6f705633..e448258d 100644
+--- a/tests/test_realvect.py
++++ b/tests/test_realvect.py
+@@ -13,8 +13,8 @@ def test_realvect_init():
+ 
+     for ii in range(amr.Config.spacedim):
+         assert rv[ii] == 0
+-        assert rv2[ii] == ii + 0.1
+-        assert rv3[ii] == 0.3
++        assert np.isclose(rv2[ii], ii + 0.1)
++        assert np.isclose(rv3[ii], 0.3)
+ 
+ 
+ @pytest.mark.skipif(amr.Config.spacedim != 1, reason="Requires AMREX_SPACEDIM = 1")
+@@ -49,8 +49,8 @@ def test_rv_3d1():
+     # Check indexing
+     assert obj[0] == 1
+     assert obj[1] == 2
+-    assert obj[2] == 3.14
+-    assert obj[-1] == 3.14
++    assert np.isclose(obj[2], 3.14)
++    assert np.isclose(obj[-1], 3.14)
+     assert obj[-2] == 2
+     assert obj[-3] == 1
+     with pytest.raises(IndexError):
+@@ -137,9 +137,13 @@ def test_subtraction():
+         assert v4[ii] == v5[ii]
+ 
+     # v - v
+-    assert v5 - v3 == uv
++    res1 = v5 - v3
++    for ii in range(amr.Config.spacedim):
++        assert np.isclose(res1[ii], uv[ii])
+     # r - v
+-    assert 1.0 - v6 == amr.RealVect(2.0)
++    res2 = 1.0 - v6
++    for ii in range(amr.Config.spacedim):
++        assert np.isclose(res2[ii], 2.0)
+ 
+ 
+ def test_multiplication():
+
+From 5be04932eb478077aa1eb690435794577295c514 Mon Sep 17 00:00:00 2001
+From: Axel Huebl <axel.huebl@plasma.ninja>
+Date: Thu, 31 Jul 2025 13:47:48 -0700
+Subject: [PATCH 4/8] Config: Precision Properties
+
+---
+ src/Base/AMReX.cpp | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+
+diff --git a/src/Base/AMReX.cpp b/src/Base/AMReX.cpp
+index 59bf70e3..8f0737ef 100644
+--- a/src/Base/AMReX.cpp
++++ b/src/Base/AMReX.cpp
+@@ -82,6 +82,24 @@ void init_AMReX(py::module& m)
+                 return "SYCL";
+ #else
+                 return py::none();
++#endif
++            })
++        .def_property_readonly_static(
++        "precision",
++        [](py::object){
++#ifdef AMREX_SINGLE_PRECISION
++                return "SINGLE";
++#else
++                return "DOUBLE";
++#endif
++        })
++        .def_property_readonly_static(
++            "precision_particles",
++            [](py::object){
++#ifdef AMREX_SINGLE_PRECISION_PARTICLES
++                return "SINGLE";
++#else
++                return "DOUBLE";
+ #endif
+             })
+         ;
+
+From a5a5c8ef07f5dad0b885bc94e4d196a22ca30aca Mon Sep 17 00:00:00 2001
+From: Axel Huebl <axel.huebl@plasma.ninja>
+Date: Thu, 31 Jul 2025 13:52:17 -0700
+Subject: [PATCH 5/8] AoS: Include Padding in Array Interface
+
+SP has some detailed padding before `idcpu` and at the end
+of each particle, if they do not align with the size of `double`.
+---
+ src/Particle/ArrayOfStructs.H | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+
+diff --git a/src/Particle/ArrayOfStructs.H b/src/Particle/ArrayOfStructs.H
+index 1902e825..73ef24ad 100644
+--- a/src/Particle/ArrayOfStructs.H
++++ b/src/Particle/ArrayOfStructs.H
+@@ -43,17 +43,38 @@ namespace
+ #if (AMREX_SPACEDIM >= 3)
+         descr.append(py::make_tuple("z", py::format_descriptor<RealType>::format()));
+ #endif
++
++        /* Note AMReX_Particle.H:
++         * struct alignas(sizeof(double)) Particle ...
++         *   aligns the ParticleBase member (pads the end if needed).
++         * in
++         * struct ParticleBase
++         * {
++         *   T m_pos[AMREX_SPACEDIM];
++         *   T m_rdata[NReal];
++         *   uint64_t m_idcpu = 0;
++         *   int m_idata[NInt];
++         * };
++         */
+         if constexpr (ParticleType::NReal > 0) {
+             for(int ii=0; ii < ParticleType::NReal; ii++) {
+                 descr.append(py::make_tuple("rdata_"+std::to_string(ii),py::format_descriptor<RealType>::format()));
+             }
+         }
++#ifdef AMREX_SINGLE_PRECISION_PARTICLES
++        if constexpr ((AMREX_SPACEDIM + ParticleType::NReal) % 2 != 0) {  // alignas
++            descr.append(py::make_tuple("", "|V4"));  // empty space due to alignment
++        }
++#endif
+         descr.append(py::make_tuple("idcpu", py::format_descriptor<uint64_t>::format()) );
+         if constexpr (ParticleType::NInt > 0) {
+             for(int ii=0; ii < ParticleType::NInt; ++ii) {
+                 descr.append(py::make_tuple("idata_"+std::to_string(ii),py::format_descriptor<int>::format()));
+             }
+         }
++        if constexpr (ParticleType::NInt % 2 != 0) {  // alignas
++            descr.append(py::make_tuple("", "|V4"));  // empty space due to alignment
++        }
+ 
+         d["descr"] = descr;
+         d["version"] = 3;
+
+From 1115b36cbabda96e6a830004630b33210d0f267e Mon Sep 17 00:00:00 2001
+From: Axel Huebl <axel.huebl@plasma.ninja>
+Date: Thu, 31 Jul 2025 13:53:22 -0700
+Subject: [PATCH 6/8] AoS: Fix SP Tests, Skip DF
+
+Importing into pandas does not support binary fields, but
+there is no quick way to remove them.
+---
+ tests/test_aos.py               | 14 ++++++++------
+ tests/test_particleContainer.py | 10 +++++++++-
+ 2 files changed, 17 insertions(+), 7 deletions(-)
+
+diff --git a/tests/test_aos.py b/tests/test_aos.py
+index 5f66948a..dec36e26 100644
+--- a/tests/test_aos.py
++++ b/tests/test_aos.py
+@@ -76,15 +76,16 @@ def test_array_interface():
+     # print('particle 2 from aos:\n',aos[1])
+     # print('array interface\n', aos.__array_interface__)
+     arr = aos.to_numpy()
++    int_arg = 7 if arr[0][0].dtype == "float32" else 6  # padding
+     assert (
+         np.isclose(arr[0][0], 1.0)
+         and np.isclose(arr[0][4], 5.2)
+-        and np.isclose(arr[0][6], 6)  # fixme in SP: reads int32(0)
++        and np.isclose(arr[0][int_arg], 6)  # fixme in SP: reads int32(0)
+     )
+     assert (
+         np.isclose(arr[1][2], 10)
+         and np.isclose(arr[1][3], 11.1)
+-        and np.isclose(arr[1][6], 13)
++        and np.isclose(arr[1][int_arg], 13)
+     )
+ 
+     p3 = amr.Particle_2_1(x=-3)
+@@ -102,10 +103,11 @@ def test_array_interface():
+     assert aos[0].y == arr[0][1] == 0
+     assert aos[0].z == arr[0][2] == 0
+ 
+-    shape = amr.Config.spacedim + amr.Particle_2_1.NReal + amr.Particle_2_1.NInt + 1
+-    for ii in range(shape):
+-        arr[1][ii] = 0
+-    arr[1][1] = -5  # np.array([0, -5, 0,0,0,0,0])
++    arr[1][0] = 0
++    arr[1][1] = -5
++    arr[1][2] = 0
++    arr[1][3] = 0
++    arr[1][4] = 0  # np.array([0, -5, 0,0,0,0,0, ...])
+     print("array:", arr)
+     print("aos[0]:", aos[0], "aos[1]:", aos[1])
+     assert aos[1].y == arr[1][1] == -5
+diff --git a/tests/test_particleContainer.py b/tests/test_particleContainer.py
+index b6eb52b2..432e57e2 100644
+--- a/tests/test_particleContainer.py
++++ b/tests/test_particleContainer.py
+@@ -339,7 +339,7 @@ def test_particle_init(Npart, particle_container):
+         aos = pt.get_array_of_structs()
+         print(aos[0])
+         assert aos[0].get_idata(0) == 2
+-        assert real_arrays[1][0] == -1.2
++        assert np.isclose(real_arrays[1][0], -1.2)
+         assert int_arrays[0][0] == -3
+ 
+ 
+@@ -464,6 +464,10 @@ class Config:
+ @pytest.mark.skipif(
+     importlib.util.find_spec("pandas") is None, reason="pandas is not available"
+ )
++@pytest.mark.skipif(
++    amr.Config.precision_particles == "SINGLE",
++    reason="Requires DOUBLE precision particles",
++)
+ def test_pc_df(particle_container, Npart):
+     pc = particle_container
+     print(f"pc={pc}")
+@@ -552,6 +556,10 @@ def test_pc_empty_df(empty_particle_container, Npart):
+ @pytest.mark.skipif(
+     importlib.util.find_spec("pandas") is None, reason="pandas is not available"
+ )
++@pytest.mark.skipif(
++    amr.Config.precision_particles == "SINGLE",
++    reason="Requires DOUBLE precision particles",
++)
+ @pytest.mark.skipif(not amr.Config.have_mpi, reason="Requires AMReX_MPI=ON")
+ def test_pc_df_mpi(particle_container, Npart):
+     pc = particle_container
+
+From ec0602c21fe3a8c8c10a9b654a8a07ed1deeff13 Mon Sep 17 00:00:00 2001
+From: Axel Huebl <axel.huebl@plasma.ninja>
+Date: Thu, 31 Jul 2025 14:01:39 -0700
+Subject: [PATCH 7/8] Config: Formatting
+
+---
+ src/Base/AMReX.cpp | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/Base/AMReX.cpp b/src/Base/AMReX.cpp
+index 8f0737ef..f054a483 100644
+--- a/src/Base/AMReX.cpp
++++ b/src/Base/AMReX.cpp
+@@ -85,8 +85,8 @@ void init_AMReX(py::module& m)
+ #endif
+             })
+         .def_property_readonly_static(
+-        "precision",
+-        [](py::object){
++            "precision",
++            [](py::object){
+ #ifdef AMREX_SINGLE_PRECISION
+                 return "SINGLE";
+ #else
+
+From 2d6eda64ba08c3a9ee225eb9ca51bd815b2e6e57 Mon Sep 17 00:00:00 2001
+From: Axel Huebl <axel.huebl@plasma.ninja>
+Date: Fri, 1 Aug 2025 11:18:34 -0700
+Subject: [PATCH 8/8] No End-of-particle padding... o.0
+
+---
+ src/Particle/ArrayOfStructs.H | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/Particle/ArrayOfStructs.H b/src/Particle/ArrayOfStructs.H
+index 73ef24ad..0a7b9c39 100644
+--- a/src/Particle/ArrayOfStructs.H
++++ b/src/Particle/ArrayOfStructs.H
+@@ -71,10 +71,10 @@ namespace
+             for(int ii=0; ii < ParticleType::NInt; ++ii) {
+                 descr.append(py::make_tuple("idata_"+std::to_string(ii),py::format_descriptor<int>::format()));
+             }
+-        }
++        }/*
+         if constexpr (ParticleType::NInt % 2 != 0) {  // alignas
+             descr.append(py::make_tuple("", "|V4"));  // empty space due to alignment
+-        }
++        }*/
+ 
+         d["descr"] = descr;
+         d["version"] = 3;
