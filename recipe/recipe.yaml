@@ -4,8 +4,8 @@ schema_version: 1
 
 context:
   name: pyamrex
-  version: "25.07"
-  build: 2
+  version: "25.08"
+  build: 0
   mpi: ${{ mpi or "nompi" }}  # is this still needed?
   mpi_prefix: ${{ "nompi" if mpi == "nompi" else "mpi_" + mpi }}
 
@@ -15,7 +15,7 @@ package:
 
 source:
   url: https://github.com/AMReX-Codes/pyamrex/archive/refs/tags/${{ version }}.tar.gz
-  sha256: d8cf7d09b5d4ea1e5ddfb02f592ba6483181dea680f21c7c7e7044ac7f960ca8
+  sha256: 8e95fce061ef02646af00accca7e6ac76d85999314e10d24435beee17dcca85a
 
 build:
   skip: python_impl == "pypy"
@@ -24,8 +24,8 @@ build:
   # dependencies:
   # `pkg * mpi_mpich_*` for mpich
   # `pkg * mpi_*` for any mpi
-  number: ${{ build | int + 100 if mpi == "nompi" else build }}
-  string: ${{ mpi_prefix }}_py${{ python | version_to_buildstring }}h${{ hash }}_${{ build | int + 100 if mpi == "nompi" else build }}
+  number: ${{ build | int + 100 if mpi == "nompi" and pyamrex_precision == "dp" else build }}
+  string: ${{ mpi_prefix }}_${{ pyamrex_precision }}_py${{ python | version_to_buildstring }}h${{ hash }}_${{ build | int + 100 if mpi == "nompi" else build }}
 
 requirements:
   build:
@@ -58,7 +58,7 @@ requirements:
       then: openmpi
 
   host:
-    - amrex >=${{ version }}[build=${{ mpi_prefix }}_*]
+    - amrex >=${{ version }}[build=${{ mpi_prefix }}_${{ pyamrex_precision }}_*]
     - if: "mpi != 'nompi'"
       then: ${{ mpi }}
     - python
@@ -69,9 +69,10 @@ requirements:
     - pybind11-abi
     - python
     - setuptools
+    - vir-simd
     - wheel
   run:
-    - amrex >=${{ version }}[build=${{ mpi_prefix }}_*]
+    - amrex >=${{ version }}[build=${{ mpi_prefix }}_${{ pyamrex_precision }}_*]
     - if: "mpi != 'nompi'"
       then:
         - ${{ mpi }}
@@ -80,8 +81,8 @@ requirements:
     - if: osx
       then: libcxx
   run_exports:
-    # strict runtime dependency on build-time MPI flavor
-    - ${{ name }} * ${{ mpi_prefix }}_*
+    # strict runtime dependency on build-time MPI flavor and DP/SP variant
+    - ${{ name }} * ${{ mpi_prefix }}_${{ pyamrex_precision }}_*
     # Releases are not (yet) compatible:
     # There is no ABI compatibility check or guarantee between AMReX releases.
     - pyamrex ==${{ version }}
