@@ -69,6 +69,7 @@ requirements:
     - pybind11-abi
     - python
     - setuptools
+    - vir-simd
     - wheel
   run:
     - amrex >=${{ version }}[build=${{ mpi_prefix }}_${{ pyamrex_precision }}_*]
