@@ -16,10 +16,6 @@ package:
 source:
   url: https://github.com/AMReX-Codes/pyamrex/archive/refs/tags/${{ version }}.tar.gz
   sha256: ea7e6e161f3185e966b1bfadea04b61ed9bc7de58708c812baea75a25419242e
-  patches:
-    # fix use-after-free in to_numpy
-    # https://github.com/AMReX-Codes/pyamrex/pull/478
-    - 478.patch
 
 build:
   skip: python_impl == "pypy"
