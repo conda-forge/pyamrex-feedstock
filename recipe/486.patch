@@ -1,0 +1,23 @@
+From 96b23c5801ba3c700d85c8e24eea8fa591a5ef3f Mon Sep 17 00:00:00 2001
+From: Edoardo Zoni <ezoni@lbl.gov>
+Date: Wed, 1 Oct 2025 17:00:56 -0700
+Subject: [PATCH] Strip "v" prefix from version for find_package
+
+---
+ cmake/dependencies/pybind11.cmake | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/cmake/dependencies/pybind11.cmake b/cmake/dependencies/pybind11.cmake
+index b39b88da..19ca1a9f 100644
+--- a/cmake/dependencies/pybind11.cmake
++++ b/cmake/dependencies/pybind11.cmake
+@@ -62,6 +62,9 @@ file(READ "${pyAMReX_SOURCE_DIR}/dependencies.json" dependencies_data)
+ string(JSON pybind11_version GET "${dependencies_data}" version_pybind11)
+ string(JSON pybind11_commit GET "${dependencies_data}" commit_pybind11)
+ 
++# Strip "v" prefix from version for find_package
++string(REGEX REPLACE "^v" "" pybind11_version "${pybind11_version}")
++
+ set(pyAMReX_pybind11_branch ${pybind11_commit}
+     CACHE STRING
+     "Repository branch for pyAMReX_pybind11_repo if(pyAMReX_pybind11_internal)")

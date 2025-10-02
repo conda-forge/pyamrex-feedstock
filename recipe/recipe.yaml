@@ -4,8 +4,8 @@ schema_version: 1
 
 context:
   name: pyamrex
-  version: "25.09"
-  build: 2
+  version: "25.10"
+  build: 0
   mpi: ${{ mpi or "nompi" }}  # is this still needed?
   mpi_prefix: ${{ "nompi" if mpi == "nompi" else "mpi_" + mpi }}
 
@@ -15,11 +15,9 @@ package:
 
 source:
   url: https://github.com/AMReX-Codes/pyamrex/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 5ae257ed32300decdfb77d6487f74509167c65102cb61ae7528716d7da2ea263
+  sha256: ea7e6e161f3185e966b1bfadea04b61ed9bc7de58708c812baea75a25419242e
   patches:
-    # fix use-after-free in to_numpy
-    # https://github.com/AMReX-Codes/pyamrex/pull/478
-    - 478.patch
+    - 486.patch  # https://github.com/AMReX-Codes/pyamrex/pull/486
 
 build:
   skip: python_impl == "pypy"
