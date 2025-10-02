@@ -16,6 +16,8 @@ package:
 source:
   url: https://github.com/AMReX-Codes/pyamrex/archive/refs/tags/${{ version }}.tar.gz
   sha256: ea7e6e161f3185e966b1bfadea04b61ed9bc7de58708c812baea75a25419242e
+  patches:
+    - 486.patch  # https://github.com/AMReX-Codes/pyamrex/pull/486
 
 build:
   skip: python_impl == "pypy"
