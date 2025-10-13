@@ -17,6 +17,7 @@ cmake ^
     -DpyAMReX_amrex_internal=OFF    ^
     -DpyAMReX_pybind11_internal=OFF ^
     -DPython_EXECUTABLE=%PYTHON%    ^
+    --trace-expand ^
     -DPYINSTALLOPTIONS="--no-build-isolation"
 if errorlevel 1 exit 1
 
