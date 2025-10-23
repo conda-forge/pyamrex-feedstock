@@ -9,7 +9,7 @@ cmake ^
     -DCMAKE_BUILD_TYPE=Release      ^
     -DCMAKE_C_COMPILER=clang-cl     ^
     -DCMAKE_CXX_COMPILER=clang-cl   ^
-    -DCMAKE_INSTALL_LIBDIR=lib      ^
+    -DCMAKE_INSTALL_LIBDIR=%LIBRARY_PREFIX%/lib      ^
     -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
     -DCMAKE_LINKER=lld-link         ^
     -DCMAKE_NM=llvm-nm              ^
@@ -17,7 +17,6 @@ cmake ^
     -DpyAMReX_amrex_internal=OFF    ^
     -DpyAMReX_pybind11_internal=OFF ^
     -DPython_EXECUTABLE=%PYTHON%    ^
-    --trace-expand ^
     -DPYINSTALLOPTIONS="--no-build-isolation"
 if errorlevel 1 exit 1
 
