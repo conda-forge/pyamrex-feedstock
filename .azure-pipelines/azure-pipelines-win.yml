@@ -8,35 +8,35 @@ jobs:
     vmImage: windows-2022
   strategy:
     matrix:
-      win_64_channel_sourcesconda-forgeconda-forgelabelpython_rcpyamrex_precisiondppython3.14.____cp314:
-        CONFIG: win_64_channel_sourcesconda-forgeconda-forgelabelpython_rcpyamrex_precisiondppython3.14.____cp314
+      win_64_pyamrex_precisiondppython3.10.____cpython:
+        CONFIG: win_64_pyamrex_precisiondppython3.10.____cpython
         UPLOAD_PACKAGES: 'True'
-      win_64_channel_sourcesconda-forgeconda-forgelabelpython_rcpyamrex_precisionsppython3.14.____cp314:
-        CONFIG: win_64_channel_sourcesconda-forgeconda-forgelabelpython_rcpyamrex_precisionsppython3.14.____cp314
+      win_64_pyamrex_precisiondppython3.11.____cpython:
+        CONFIG: win_64_pyamrex_precisiondppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
-      win_64_channel_sourcesconda-forgepyamrex_precisiondppython3.10.____cpython:
-        CONFIG: win_64_channel_sourcesconda-forgepyamrex_precisiondppython3.10.____cpython
+      win_64_pyamrex_precisiondppython3.12.____cpython:
+        CONFIG: win_64_pyamrex_precisiondppython3.12.____cpython
         UPLOAD_PACKAGES: 'True'
-      win_64_channel_sourcesconda-forgepyamrex_precisiondppython3.11.____cpython:
-        CONFIG: win_64_channel_sourcesconda-forgepyamrex_precisiondppython3.11.____cpython
+      win_64_pyamrex_precisiondppython3.13.____cp313:
+        CONFIG: win_64_pyamrex_precisiondppython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
-      win_64_channel_sourcesconda-forgepyamrex_precisiondppython3.12.____cpython:
-        CONFIG: win_64_channel_sourcesconda-forgepyamrex_precisiondppython3.12.____cpython
+      win_64_pyamrex_precisiondppython3.14.____cp314:
+        CONFIG: win_64_pyamrex_precisiondppython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
-      win_64_channel_sourcesconda-forgepyamrex_precisiondppython3.13.____cp313:
-        CONFIG: win_64_channel_sourcesconda-forgepyamrex_precisiondppython3.13.____cp313
+      win_64_pyamrex_precisionsppython3.10.____cpython:
+        CONFIG: win_64_pyamrex_precisionsppython3.10.____cpython
         UPLOAD_PACKAGES: 'True'
-      win_64_channel_sourcesconda-forgepyamrex_precisionsppython3.10.____cpython:
-        CONFIG: win_64_channel_sourcesconda-forgepyamrex_precisionsppython3.10.____cpython
+      win_64_pyamrex_precisionsppython3.11.____cpython:
+        CONFIG: win_64_pyamrex_precisionsppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
-      win_64_channel_sourcesconda-forgepyamrex_precisionsppython3.11.____cpython:
-        CONFIG: win_64_channel_sourcesconda-forgepyamrex_precisionsppython3.11.____cpython
+      win_64_pyamrex_precisionsppython3.12.____cpython:
+        CONFIG: win_64_pyamrex_precisionsppython3.12.____cpython
         UPLOAD_PACKAGES: 'True'
-      win_64_channel_sourcesconda-forgepyamrex_precisionsppython3.12.____cpython:
-        CONFIG: win_64_channel_sourcesconda-forgepyamrex_precisionsppython3.12.____cpython
+      win_64_pyamrex_precisionsppython3.13.____cp313:
+        CONFIG: win_64_pyamrex_precisionsppython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
-      win_64_channel_sourcesconda-forgepyamrex_precisionsppython3.13.____cp313:
-        CONFIG: win_64_channel_sourcesconda-forgepyamrex_precisionsppython3.13.____cp313
+      win_64_pyamrex_precisionsppython3.14.____cp314:
+        CONFIG: win_64_pyamrex_precisionsppython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
     maxParallel: 3
   timeoutInMinutes: 360
