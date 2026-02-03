@@ -16,7 +16,7 @@ cmake ^
     -DCMAKE_VERBOSE_MAKEFILE=ON     ^
     -DpyAMReX_amrex_internal=OFF    ^
     -DpyAMReX_pybind11_internal=OFF ^
-    -DDAMReX_FFTW_IGNORE_OMP=ON     ^
+    -DAMReX_FFTW_IGNORE_OMP=ON     ^
     -DPython_EXECUTABLE=%PYTHON%    ^
     -DPYINSTALLOPTIONS="--no-build-isolation"
 if errorlevel 1 exit 1
