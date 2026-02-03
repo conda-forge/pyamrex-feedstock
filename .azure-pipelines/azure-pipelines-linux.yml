@@ -128,10 +128,6 @@ jobs:
         CONFIG: linux_64_mpiopenmpipyamrex_precisionsppython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_aarch64_mpimpichpyamrex_precisiondppython3.10.____cpython:
-        CONFIG: linux_aarch64_mpimpichpyamrex_precisiondppython3.10.____cpython
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_aarch64_mpimpichpyamrex_precisiondppython3.11.____cpython:
         CONFIG: linux_aarch64_mpimpichpyamrex_precisiondppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -146,10 +142,6 @@ jobs:
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_aarch64_mpimpichpyamrex_precisiondppython3.14.____cp314:
         CONFIG: linux_aarch64_mpimpichpyamrex_precisiondppython3.14.____cp314
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_aarch64_mpimpichpyamrex_precisionsppython3.10.____cpython:
-        CONFIG: linux_aarch64_mpimpichpyamrex_precisionsppython3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_aarch64_mpimpichpyamrex_precisionsppython3.11.____cpython:
@@ -208,10 +200,6 @@ jobs:
         CONFIG: linux_aarch64_mpinompipyamrex_precisionsppython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_aarch64_mpiopenmpipyamrex_precisiondppython3.10.____cpython:
-        CONFIG: linux_aarch64_mpiopenmpipyamrex_precisiondppython3.10.____cpython
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_aarch64_mpiopenmpipyamrex_precisiondppython3.11.____cpython:
         CONFIG: linux_aarch64_mpiopenmpipyamrex_precisiondppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -226,10 +214,6 @@ jobs:
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_aarch64_mpiopenmpipyamrex_precisiondppython3.14.____cp314:
         CONFIG: linux_aarch64_mpiopenmpipyamrex_precisiondppython3.14.____cp314
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_aarch64_mpiopenmpipyamrex_precisionsppython3.10.____cpython:
-        CONFIG: linux_aarch64_mpiopenmpipyamrex_precisionsppython3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_aarch64_mpiopenmpipyamrex_precisionsppython3.11.____cpython:
