@@ -11,7 +11,7 @@ cxx_compiler:
 mpi:
 - nompi
 mpich:
-- '4'
+- '5'
 numpy:
 - '2'
 openmpi:
