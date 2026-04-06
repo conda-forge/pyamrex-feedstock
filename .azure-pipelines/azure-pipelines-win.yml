@@ -8,9 +8,6 @@ jobs:
     vmImage: windows-2022
   strategy:
     matrix:
-      win_64_pyamrex_precisiondppython3.10.____cpython:
-        CONFIG: win_64_pyamrex_precisiondppython3.10.____cpython
-        UPLOAD_PACKAGES: 'True'
       win_64_pyamrex_precisiondppython3.11.____cpython:
         CONFIG: win_64_pyamrex_precisiondppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -22,9 +19,6 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       win_64_pyamrex_precisiondppython3.14.____cp314:
         CONFIG: win_64_pyamrex_precisiondppython3.14.____cp314
-        UPLOAD_PACKAGES: 'True'
-      win_64_pyamrex_precisionsppython3.10.____cpython:
-        CONFIG: win_64_pyamrex_precisionsppython3.10.____cpython
         UPLOAD_PACKAGES: 'True'
       win_64_pyamrex_precisionsppython3.11.____cpython:
         CONFIG: win_64_pyamrex_precisionsppython3.11.____cpython
