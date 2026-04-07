@@ -19,7 +19,8 @@ source:
   sha256: 0d17f27ca7463b9983a987629ea2c18e06a8e4d98b2b8c6affb7aacfe340690d
 
 build:
-  skip: python_impl == "pypy"
+  skip:
+    - match(python, "<3.11")
   # add build string so packages can depend on
   # mpi or nompi variants
   # dependencies:
