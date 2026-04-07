@@ -8,6 +8,10 @@ jobs:
     vmImage: $(VMIMAGE)
   strategy:
     matrix:
+      osx_64_mpimpichpyamrex_precisiondppython3.10.____cpython:
+        CONFIG: osx_64_mpimpichpyamrex_precisiondppython3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
       osx_64_mpimpichpyamrex_precisiondppython3.11.____cpython:
         CONFIG: osx_64_mpimpichpyamrex_precisiondppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -22,6 +26,10 @@ jobs:
         VMIMAGE: macOS-15
       osx_64_mpimpichpyamrex_precisiondppython3.14.____cp314:
         CONFIG: osx_64_mpimpichpyamrex_precisiondppython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+      osx_64_mpimpichpyamrex_precisionsppython3.10.____cpython:
+        CONFIG: osx_64_mpimpichpyamrex_precisionsppython3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
       osx_64_mpimpichpyamrex_precisionsppython3.11.____cpython:
@@ -40,6 +48,10 @@ jobs:
         CONFIG: osx_64_mpimpichpyamrex_precisionsppython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+      osx_64_mpinompipyamrex_precisiondppython3.10.____cpython:
+        CONFIG: osx_64_mpinompipyamrex_precisiondppython3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
       osx_64_mpinompipyamrex_precisiondppython3.11.____cpython:
         CONFIG: osx_64_mpinompipyamrex_precisiondppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -54,6 +66,10 @@ jobs:
         VMIMAGE: macOS-15
       osx_64_mpinompipyamrex_precisiondppython3.14.____cp314:
         CONFIG: osx_64_mpinompipyamrex_precisiondppython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+      osx_64_mpinompipyamrex_precisionsppython3.10.____cpython:
+        CONFIG: osx_64_mpinompipyamrex_precisionsppython3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
       osx_64_mpinompipyamrex_precisionsppython3.11.____cpython:
@@ -72,6 +88,10 @@ jobs:
         CONFIG: osx_64_mpinompipyamrex_precisionsppython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+      osx_64_mpiopenmpipyamrex_precisiondppython3.10.____cpython:
+        CONFIG: osx_64_mpiopenmpipyamrex_precisiondppython3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
       osx_64_mpiopenmpipyamrex_precisiondppython3.11.____cpython:
         CONFIG: osx_64_mpiopenmpipyamrex_precisiondppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -86,6 +106,10 @@ jobs:
         VMIMAGE: macOS-15
       osx_64_mpiopenmpipyamrex_precisiondppython3.14.____cp314:
         CONFIG: osx_64_mpiopenmpipyamrex_precisiondppython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+      osx_64_mpiopenmpipyamrex_precisionsppython3.10.____cpython:
+        CONFIG: osx_64_mpiopenmpipyamrex_precisionsppython3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
       osx_64_mpiopenmpipyamrex_precisionsppython3.11.____cpython:
@@ -104,6 +128,10 @@ jobs:
         CONFIG: osx_64_mpiopenmpipyamrex_precisionsppython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+      osx_arm64_mpimpichpyamrex_precisiondppython3.10.____cpython:
+        CONFIG: osx_arm64_mpimpichpyamrex_precisiondppython3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
       osx_arm64_mpimpichpyamrex_precisiondppython3.11.____cpython:
         CONFIG: osx_arm64_mpimpichpyamrex_precisiondppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -118,6 +146,10 @@ jobs:
         VMIMAGE: macOS-15
       osx_arm64_mpimpichpyamrex_precisiondppython3.14.____cp314:
         CONFIG: osx_arm64_mpimpichpyamrex_precisiondppython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+      osx_arm64_mpimpichpyamrex_precisionsppython3.10.____cpython:
+        CONFIG: osx_arm64_mpimpichpyamrex_precisionsppython3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
       osx_arm64_mpimpichpyamrex_precisionsppython3.11.____cpython:
@@ -136,6 +168,10 @@ jobs:
         CONFIG: osx_arm64_mpimpichpyamrex_precisionsppython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+      osx_arm64_mpinompipyamrex_precisiondppython3.10.____cpython:
+        CONFIG: osx_arm64_mpinompipyamrex_precisiondppython3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
       osx_arm64_mpinompipyamrex_precisiondppython3.11.____cpython:
         CONFIG: osx_arm64_mpinompipyamrex_precisiondppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -150,6 +186,10 @@ jobs:
         VMIMAGE: macOS-15
       osx_arm64_mpinompipyamrex_precisiondppython3.14.____cp314:
         CONFIG: osx_arm64_mpinompipyamrex_precisiondppython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+      osx_arm64_mpinompipyamrex_precisionsppython3.10.____cpython:
+        CONFIG: osx_arm64_mpinompipyamrex_precisionsppython3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
       osx_arm64_mpinompipyamrex_precisionsppython3.11.____cpython:
@@ -168,6 +208,10 @@ jobs:
         CONFIG: osx_arm64_mpinompipyamrex_precisionsppython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+      osx_arm64_mpiopenmpipyamrex_precisiondppython3.10.____cpython:
+        CONFIG: osx_arm64_mpiopenmpipyamrex_precisiondppython3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
       osx_arm64_mpiopenmpipyamrex_precisiondppython3.11.____cpython:
         CONFIG: osx_arm64_mpiopenmpipyamrex_precisiondppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -182,6 +226,10 @@ jobs:
         VMIMAGE: macOS-15
       osx_arm64_mpiopenmpipyamrex_precisiondppython3.14.____cp314:
         CONFIG: osx_arm64_mpiopenmpipyamrex_precisiondppython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+      osx_arm64_mpiopenmpipyamrex_precisionsppython3.10.____cpython:
+        CONFIG: osx_arm64_mpiopenmpipyamrex_precisionsppython3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
       osx_arm64_mpiopenmpipyamrex_precisionsppython3.11.____cpython:
