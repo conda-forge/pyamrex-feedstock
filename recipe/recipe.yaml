@@ -8,7 +8,6 @@ context:
   build: 0
   mpi: ${{ mpi or "nompi" }}  # is this still needed?
   mpi_prefix: ${{ "nompi" if mpi == "nompi" else "mpi_" + mpi }}
-  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
