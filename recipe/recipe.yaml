@@ -62,8 +62,6 @@ requirements:
     - amrex >=${{ version }}[build=${{ mpi_prefix }}_${{ pyamrex_precision }}_*]
     - if: "mpi != 'nompi'"
       then: ${{ mpi }}
-    - python
-    - pybind11
     - numpy
     - pip
     - pybind11
