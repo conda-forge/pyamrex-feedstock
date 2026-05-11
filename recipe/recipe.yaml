@@ -4,7 +4,7 @@ schema_version: 1
 
 context:
   name: pyamrex
-  version: "26.04"
+  version: "26.05"
   build: 0
   mpi: ${{ mpi or "nompi" }}  # is this still needed?
   mpi_prefix: ${{ "nompi" if mpi == "nompi" else "mpi_" + mpi }}
@@ -15,7 +15,7 @@ package:
 
 source:
   url: https://github.com/AMReX-Codes/pyamrex/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 0d17f27ca7463b9983a987629ea2c18e06a8e4d98b2b8c6affb7aacfe340690d
+  sha256: f61a4384b46feeffd095d56b1e636f49410aa74a5fbdbfec10a3f568aa1b0e24
 
 build:
   skip:
