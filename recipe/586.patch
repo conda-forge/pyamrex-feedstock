@@ -1,0 +1,87 @@
+From 1f922108c4f6aaac10060ddbfa9c280f3dbd2136 Mon Sep 17 00:00:00 2001
+From: Axel Huebl <axel.huebl@plasma.ninja>
+Date: Sat, 6 Jun 2026 15:52:16 -0700
+Subject: [PATCH] Fix SP Tests
+
+---
+ tests/conftest.py       | 14 ++++++++++++++
+ tests/test_basefab.py   |  7 ++++---
+ tests/test_farraybox.py |  9 ++++-----
+ 3 files changed, 22 insertions(+), 8 deletions(-)
+
+diff --git a/tests/conftest.py b/tests/conftest.py
+index e292c9c3..63f97eb5 100644
+--- a/tests/conftest.py
++++ b/tests/conftest.py
+@@ -5,6 +5,7 @@
+ import platform
+ import sys
+ 
++import numpy as np
+ import pytest
+ 
+ try:
+@@ -26,6 +27,19 @@
+ basepath = os.getcwd()
+ 
+ 
++@pytest.fixture(scope="function")
++def make_real_array4():
++    """Create an Array4 of ones matching the compiled amrex::Real precision."""
++
++    def make(shape):
++        if amr.Config.precision == "SINGLE":
++            return amr.Array4_float(np.ones(shape, dtype=np.float32))
++        else:
++            return amr.Array4_double(np.ones(shape, dtype=np.float64))
++
++    return make
++
++
+ @pytest.fixture(scope="function")
+ def assert_keeps_python_alive():
+     """Assert that a pybind11 object keeps its Python owner alive."""
+diff --git a/tests/test_basefab.py b/tests/test_basefab.py
+index a3563043..f17b7386 100644
+--- a/tests/test_basefab.py
++++ b/tests/test_basefab.py
+@@ -20,9 +20,10 @@ def test_basefab_to_host():
+     np.testing.assert_allclose(x1, x2)
+ 
+ 
+-def test_basefab_array4_constructor_keeps_array4_alive(assert_keeps_python_alive):
+-    x = np.ones((2, 3, 4))
+-    arr = amr.Array4_double(x)
++def test_basefab_array4_constructor_keeps_array4_alive(
++    assert_keeps_python_alive, make_real_array4
++):
++    arr = make_real_array4((2, 3, 4))
+ 
+     assert_keeps_python_alive(arr, lambda: amr.BaseFab_Real(arr))
+     assert_keeps_python_alive(
+diff --git a/tests/test_farraybox.py b/tests/test_farraybox.py
+index ae52fe02..aa6a7fd5 100644
+--- a/tests/test_farraybox.py
++++ b/tests/test_farraybox.py
+@@ -1,7 +1,5 @@
+ # -*- coding: utf-8 -*-
+ 
+-import numpy as np
+-
+ import amrex.space3d as amr
+ 
+ 
+@@ -20,9 +18,10 @@ def test_farraybox_io():
+     # fab.read_from(iob)
+ 
+ 
+-def test_farraybox_array4_constructor_keeps_array4_alive(assert_keeps_python_alive):
+-    x = np.ones((2, 3, 4))
+-    arr = amr.Array4_double(x)
++def test_farraybox_array4_constructor_keeps_array4_alive(
++    assert_keeps_python_alive, make_real_array4
++):
++    arr = make_real_array4((2, 3, 4))
+ 
+     assert_keeps_python_alive(arr, lambda: amr.FArrayBox(arr))
+     assert_keeps_python_alive(
