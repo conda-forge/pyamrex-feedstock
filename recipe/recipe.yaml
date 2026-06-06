@@ -16,6 +16,9 @@ package:
 source:
   url: https://github.com/AMReX-Codes/pyamrex/archive/refs/tags/${{ version }}.tar.gz
   sha256: 990526a64378066bf9a53a6268731c03cc4e12cf59804a1695447d9336e251d5
+  patches:
+    # fix single precision tests
+    - 586.patch
 
 build:
   skip:
