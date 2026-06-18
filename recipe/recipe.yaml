@@ -5,7 +5,7 @@ schema_version: 1
 context:
   name: pyamrex
   version: "26.06"
-  build: 0
+  build: 1
   mpi: ${{ mpi or "nompi" }}  # is this still needed?
   mpi_prefix: ${{ "nompi" if mpi == "nompi" else "mpi_" + mpi }}
 
@@ -41,6 +41,12 @@ requirements:
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
     - ${{ compiler('cxx') }}
+    # Target the x86-64-v3 microarchitecture on Unix x86_64 (linux-64/osx-64).
+    # Injects -march=x86-64-v3 and adds an __archspec run-export so the package
+    # only installs on v3-capable CPUs. This activation package is __unix-only;
+    # Windows sets the flag in build.bat and adds the __archspec guard in run.
+    - if: unix and x86_64
+      then: x86_64-microarch-level ==${{ microarch_level }}
     - if: unix
       then: make
     - if: win
@@ -82,6 +88,12 @@ requirements:
     - python
     - if: osx
       then: libcxx
+    # On Windows the x86_64-microarch-level activation package is unavailable
+    # (__unix-only), so add the internal __archspec guard package directly. This
+    # mirrors the run-export the Unix builds get and keeps the v3-built Windows
+    # package from installing on pre-v3 CPUs. The -march flag is set in build.bat.
+    - if: win
+      then: _x86_64-microarch-level >=${{ microarch_level }}
   run_exports:
     # strict runtime dependency on build-time MPI flavor and DP/SP variant
     - ${{ name }} * ${{ mpi_prefix }}_${{ pyamrex_precision }}_*
