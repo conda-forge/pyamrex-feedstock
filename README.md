@@ -47,507 +47,633 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_ppc64le_mpimpichpyamrex_precisiondppython3.11.____cpython</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgeconda-forgelabelpython_rcmpimpichpyamrex_precisiondppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichpyamrex_precisiondppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgeconda-forgelabelpython_rcmpimpichpyamrex_precisiondppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpimpichpyamrex_precisiondppython3.12.____cpython</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgeconda-forgelabelpython_rcmpimpichpyamrex_precisionsppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichpyamrex_precisiondppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgeconda-forgelabelpython_rcmpimpichpyamrex_precisionsppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpimpichpyamrex_precisiondppython3.13.____cp313</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgeconda-forgelabelpython_rcmpinompipyamrex_precisiondppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichpyamrex_precisiondppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgeconda-forgelabelpython_rcmpinompipyamrex_precisiondppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpimpichpyamrex_precisiondppython3.14.____cp314</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgeconda-forgelabelpython_rcmpinompipyamrex_precisionsppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichpyamrex_precisiondppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgeconda-forgelabelpython_rcmpinompipyamrex_precisionsppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpimpichpyamrex_precisionsppython3.11.____cpython</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgeconda-forgelabelpython_rcmpiopenmpipyamrex_precisiondppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichpyamrex_precisionsppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgeconda-forgelabelpython_rcmpiopenmpipyamrex_precisiondppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpimpichpyamrex_precisionsppython3.12.____cpython</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgeconda-forgelabelpython_rcmpiopenmpipyamrex_precisionsppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichpyamrex_precisionsppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgeconda-forgelabelpython_rcmpiopenmpipyamrex_precisionsppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpimpichpyamrex_precisionsppython3.13.____cp313</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichpyamrex_precisionsppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpimpichpyamrex_precisionsppython3.14.____cp314</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichpyamrex_precisionsppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpinompipyamrex_precisiondppython3.11.____cpython</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompipyamrex_precisiondppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpinompipyamrex_precisiondppython3.12.____cpython</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompipyamrex_precisiondppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpinompipyamrex_precisiondppython3.13.____cp313</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompipyamrex_precisiondppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpinompipyamrex_precisiondppython3.14.____cp314</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompipyamrex_precisiondppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpinompipyamrex_precisionsppython3.11.____cpython</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompipyamrex_precisionsppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpinompipyamrex_precisionsppython3.12.____cpython</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompipyamrex_precisionsppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpinompipyamrex_precisionsppython3.13.____cp313</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompipyamrex_precisionsppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpinompipyamrex_precisionsppython3.14.____cp314</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompipyamrex_precisionsppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.11.____cpython</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.12.____cpython</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.13.____cp313</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.14.____cp314</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.11.____cpython</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.12.____cpython</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.13.____cp313</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.14.____cp314</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichpyamrex_precisiondppython3.11.____cpython</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichpyamrex_precisiondppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichpyamrex_precisiondppython3.12.____cpython</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichpyamrex_precisiondppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichpyamrex_precisiondppython3.13.____cp313</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichpyamrex_precisiondppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichpyamrex_precisiondppython3.14.____cp314</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichpyamrex_precisiondppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichpyamrex_precisionsppython3.11.____cpython</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichpyamrex_precisionsppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichpyamrex_precisionsppython3.12.____cpython</td>
+              <td>linux_ppc64le_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichpyamrex_precisionsppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichpyamrex_precisionsppython3.13.____cp313</td>
+              <td>osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpimpichpyamrex_precisiondppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichpyamrex_precisionsppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpimpichpyamrex_precisiondppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichpyamrex_precisionsppython3.14.____cp314</td>
+              <td>osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpimpichpyamrex_precisionsppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichpyamrex_precisionsppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpimpichpyamrex_precisionsppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpinompipyamrex_precisiondppython3.11.____cpython</td>
+              <td>osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpinompipyamrex_precisiondppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompipyamrex_precisiondppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpinompipyamrex_precisiondppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpinompipyamrex_precisiondppython3.12.____cpython</td>
+              <td>osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpinompipyamrex_precisionsppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompipyamrex_precisiondppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpinompipyamrex_precisionsppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpinompipyamrex_precisiondppython3.13.____cp313</td>
+              <td>osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpiopenmpipyamrex_precisiondppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompipyamrex_precisiondppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpiopenmpipyamrex_precisiondppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpinompipyamrex_precisiondppython3.14.____cp314</td>
+              <td>osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpiopenmpipyamrex_precisionsppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompipyamrex_precisiondppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpiopenmpipyamrex_precisionsppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpinompipyamrex_precisionsppython3.11.____cpython</td>
+              <td>osx_64_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompipyamrex_precisionsppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpinompipyamrex_precisionsppython3.12.____cpython</td>
+              <td>osx_64_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompipyamrex_precisionsppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpinompipyamrex_precisionsppython3.13.____cp313</td>
+              <td>osx_64_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompipyamrex_precisionsppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpinompipyamrex_precisionsppython3.14.____cp314</td>
+              <td>osx_64_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompipyamrex_precisionsppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpipyamrex_precisiondppython3.11.____cpython</td>
+              <td>osx_64_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpipyamrex_precisiondppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpipyamrex_precisiondppython3.12.____cpython</td>
+              <td>osx_64_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpipyamrex_precisiondppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpipyamrex_precisiondppython3.13.____cp313</td>
+              <td>osx_64_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpipyamrex_precisiondppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpipyamrex_precisiondppython3.14.____cp314</td>
+              <td>osx_64_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpipyamrex_precisiondppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpipyamrex_precisionsppython3.11.____cpython</td>
+              <td>osx_64_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpipyamrex_precisionsppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpipyamrex_precisionsppython3.12.____cpython</td>
+              <td>osx_64_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpipyamrex_precisionsppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpipyamrex_precisionsppython3.13.____cp313</td>
+              <td>osx_64_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpipyamrex_precisionsppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpipyamrex_precisionsppython3.14.____cp314</td>
+              <td>osx_64_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpipyamrex_precisionsppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpimpichpyamrex_precisiondppython3.11.____cpython</td>
+              <td>osx_64_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichpyamrex_precisiondppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpimpichpyamrex_precisiondppython3.12.____cpython</td>
+              <td>osx_64_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichpyamrex_precisiondppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpimpichpyamrex_precisiondppython3.13.____cp313</td>
+              <td>osx_64_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichpyamrex_precisiondppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpimpichpyamrex_precisiondppython3.14.____cp314</td>
+              <td>osx_64_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichpyamrex_precisiondppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpimpichpyamrex_precisionsppython3.11.____cpython</td>
+              <td>osx_64_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichpyamrex_precisionsppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpimpichpyamrex_precisionsppython3.12.____cpython</td>
+              <td>osx_64_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichpyamrex_precisionsppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpimpichpyamrex_precisionsppython3.13.____cp313</td>
+              <td>osx_64_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichpyamrex_precisionsppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpimpichpyamrex_precisionsppython3.14.____cp314</td>
+              <td>osx_64_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpimpichpyamrex_precisionsppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpinompipyamrex_precisiondppython3.11.____cpython</td>
+              <td>osx_64_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpinompipyamrex_precisiondppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpinompipyamrex_precisiondppython3.12.____cpython</td>
+              <td>osx_64_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpinompipyamrex_precisiondppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpinompipyamrex_precisiondppython3.13.____cp313</td>
+              <td>osx_64_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpinompipyamrex_precisiondppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpinompipyamrex_precisiondppython3.14.____cp314</td>
+              <td>osx_64_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpinompipyamrex_precisiondppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpinompipyamrex_precisionsppython3.11.____cpython</td>
+              <td>osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpimpichpyamrex_precisiondppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpinompipyamrex_precisionsppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpimpichpyamrex_precisiondppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpinompipyamrex_precisionsppython3.12.____cpython</td>
+              <td>osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpimpichpyamrex_precisionsppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpinompipyamrex_precisionsppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpimpichpyamrex_precisionsppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpinompipyamrex_precisionsppython3.13.____cp313</td>
+              <td>osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpinompipyamrex_precisiondppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpinompipyamrex_precisionsppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpinompipyamrex_precisiondppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpinompipyamrex_precisionsppython3.14.____cp314</td>
+              <td>osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpinompipyamrex_precisionsppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpinompipyamrex_precisionsppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpinompipyamrex_precisionsppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpiopenmpipyamrex_precisiondppython3.11.____cpython</td>
+              <td>osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpiopenmpipyamrex_precisiondppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpipyamrex_precisiondppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpiopenmpipyamrex_precisiondppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpiopenmpipyamrex_precisiondppython3.12.____cpython</td>
+              <td>osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpiopenmpipyamrex_precisionsppython3.15.____cp315</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpipyamrex_precisiondppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcmpiopenmpipyamrex_precisionsppython3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpiopenmpipyamrex_precisiondppython3.13.____cp313</td>
+              <td>osx_arm64_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpipyamrex_precisiondppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpiopenmpipyamrex_precisiondppython3.14.____cp314</td>
+              <td>osx_arm64_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpipyamrex_precisiondppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpiopenmpipyamrex_precisionsppython3.11.____cpython</td>
+              <td>osx_arm64_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpipyamrex_precisionsppython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpiopenmpipyamrex_precisionsppython3.12.____cpython</td>
+              <td>osx_arm64_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpipyamrex_precisionsppython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempimpichpyamrex_precisiondppython3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpiopenmpipyamrex_precisionsppython3.13.____cp313</td>
+              <td>osx_arm64_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpipyamrex_precisionsppython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_mpiopenmpipyamrex_precisionsppython3.14.____cp314</td>
+              <td>osx_arm64_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_mpiopenmpipyamrex_precisionsppython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.12.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.13.____cp313</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.13.____cp313" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.14.____cp314</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempimpichpyamrex_precisionsppython3.14.____cp314" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.11.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.11.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.12.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.12.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.13.____cp313</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.13.____cp313" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.14.____cp314</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempinompipyamrex_precisiondppython3.14.____cp314" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.11.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.11.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.12.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.12.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.13.____cp313</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.13.____cp313" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.14.____cp314</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempinompipyamrex_precisionsppython3.14.____cp314" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.11.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.11.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.12.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.12.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.13.____cp313</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.13.____cp313" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.14.____cp314</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempiopenmpipyamrex_precisiondppython3.14.____cp314" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.11.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.11.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.12.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.12.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.13.____cp313</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.13.____cp313" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.14.____cp314</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20615&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyamrex-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgempiopenmpipyamrex_precisionsppython3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr>
