@@ -117,7 +117,23 @@ tests:
           export OMPI_MCA_plm=isolated
           export OMPI_MCA_rmaps_base_oversubscribe=yes
           export OMPI_MCA_btl_vader_single_copy_mechanism=none
-      - python -m pytest ./tests
+      - if: unix
+        then: python -m pytest ./tests
+      # TEMPORARY Python 3.15rc2 Windows diagnostics (PR #76): pytest crashes in
+      # faulthandler after a 0xc0000139 (DLL entry point not found) event.
+      # Each probe is non-fatal (errorlevel reset) so all of them report.
+      - if: win
+        then:
+          - 'echo === DIAG 1: import _ssl (no faulthandler)'
+          - 'python -c "import _ssl" || (echo DIAG 1 FAILED & cmd /c "exit /b 0")'
+          - 'echo === DIAG 2: import _ssl (with faulthandler)'
+          - 'python -X faulthandler -c "import _ssl" || (echo DIAG 2 FAILED & cmd /c "exit /b 0")'
+          - 'echo === DIAG 3: import amrex.space3d (no faulthandler)'
+          - 'python -c "import amrex.space3d as amr; print(amr.Config.precision)" || (echo DIAG 3 FAILED & cmd /c "exit /b 0")'
+          - 'echo === DIAG 4: import amrex.space3d (with faulthandler)'
+          - 'python -X faulthandler -c "import amrex.space3d as amr; print(amr.Config.precision)" || (echo DIAG 4 FAILED & cmd /c "exit /b 0")'
+          - 'echo === DIAG 5: pytest without faulthandler'
+          - python -m pytest -p no:faulthandler ./tests
     requirements:
       run:
         - pytest
