@@ -731,6 +731,3 @@ Feedstock Maintainers
 * [@dpgrote](https://github.com/dpgrote/)
 * [@roelof-groenewald](https://github.com/roelof-groenewald/)
 
-
-<!-- dummy commit to enable rerendering -->
-
