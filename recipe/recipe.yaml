@@ -5,7 +5,7 @@ schema_version: 1
 context:
   name: pyamrex
   version: "26.10"
-  build: 0
+  build: 1
   mpi: ${{ mpi or "nompi" }}  # is this still needed?
   mpi_prefix: ${{ "nompi" if mpi == "nompi" else "mpi_" + mpi }}
 
@@ -117,7 +117,13 @@ tests:
           export OMPI_MCA_plm=isolated
           export OMPI_MCA_rmaps_base_oversubscribe=yes
           export OMPI_MCA_btl_vader_single_copy_mechanism=none
-      - python -m pytest ./tests
+      - if: unix or match(python, "<3.15")
+        then: python -m pytest ./tests
+      # CPython 3.15rc2 on Windows: faulthandler crashes (access violation
+      # loop -> stack overflow) while reporting a handled 0xc0000139 loader
+      # exception, before any test runs. The tests pass with it disabled.
+      - if: win and match(python, ">=3.15")
+        then: python -m pytest -p no:faulthandler ./tests
     requirements:
       run:
         - pytest
