@@ -48,6 +48,16 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+      osx_64_mpimpichpyamrex_precisiondppython3.15.____cp315:
+        CONFIG: osx_64_mpimpichpyamrex_precisiondppython3.15.____cp315
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
       osx_64_mpimpichpyamrex_precisionsppython3.11.____cpython:
         CONFIG: osx_64_mpimpichpyamrex_precisionsppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -80,6 +90,16 @@ jobs:
         tools_install_dir: ~/miniforge3
       osx_64_mpimpichpyamrex_precisionsppython3.14.____cp314:
         CONFIG: osx_64_mpimpichpyamrex_precisionsppython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_mpimpichpyamrex_precisionsppython3.15.____cp315:
+        CONFIG: osx_64_mpimpichpyamrex_precisionsppython3.15.____cp315
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -128,6 +148,16 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+      osx_64_mpinompipyamrex_precisiondppython3.15.____cp315:
+        CONFIG: osx_64_mpinompipyamrex_precisiondppython3.15.____cp315
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
       osx_64_mpinompipyamrex_precisionsppython3.11.____cpython:
         CONFIG: osx_64_mpinompipyamrex_precisionsppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -160,6 +190,16 @@ jobs:
         tools_install_dir: ~/miniforge3
       osx_64_mpinompipyamrex_precisionsppython3.14.____cp314:
         CONFIG: osx_64_mpinompipyamrex_precisionsppython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_mpinompipyamrex_precisionsppython3.15.____cp315:
+        CONFIG: osx_64_mpinompipyamrex_precisionsppython3.15.____cp315
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -208,6 +248,16 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+      osx_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315:
+        CONFIG: osx_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
       osx_64_mpiopenmpipyamrex_precisionsppython3.11.____cpython:
         CONFIG: osx_64_mpiopenmpipyamrex_precisionsppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -240,6 +290,16 @@ jobs:
         tools_install_dir: ~/miniforge3
       osx_64_mpiopenmpipyamrex_precisionsppython3.14.____cp314:
         CONFIG: osx_64_mpiopenmpipyamrex_precisionsppython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315:
+        CONFIG: osx_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -288,6 +348,16 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+      osx_arm64_mpimpichpyamrex_precisiondppython3.15.____cp315:
+        CONFIG: osx_arm64_mpimpichpyamrex_precisiondppython3.15.____cp315
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
       osx_arm64_mpimpichpyamrex_precisionsppython3.11.____cpython:
         CONFIG: osx_arm64_mpimpichpyamrex_precisionsppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -320,6 +390,16 @@ jobs:
         tools_install_dir: ~/miniforge3
       osx_arm64_mpimpichpyamrex_precisionsppython3.14.____cp314:
         CONFIG: osx_arm64_mpimpichpyamrex_precisionsppython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_mpimpichpyamrex_precisionsppython3.15.____cp315:
+        CONFIG: osx_arm64_mpimpichpyamrex_precisionsppython3.15.____cp315
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -368,6 +448,16 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+      osx_arm64_mpinompipyamrex_precisiondppython3.15.____cp315:
+        CONFIG: osx_arm64_mpinompipyamrex_precisiondppython3.15.____cp315
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
       osx_arm64_mpinompipyamrex_precisionsppython3.11.____cpython:
         CONFIG: osx_arm64_mpinompipyamrex_precisionsppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -400,6 +490,16 @@ jobs:
         tools_install_dir: ~/miniforge3
       osx_arm64_mpinompipyamrex_precisionsppython3.14.____cp314:
         CONFIG: osx_arm64_mpinompipyamrex_precisionsppython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_mpinompipyamrex_precisionsppython3.15.____cp315:
+        CONFIG: osx_arm64_mpinompipyamrex_precisionsppython3.15.____cp315
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -448,6 +548,16 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+      osx_arm64_mpiopenmpipyamrex_precisiondppython3.15.____cp315:
+        CONFIG: osx_arm64_mpiopenmpipyamrex_precisiondppython3.15.____cp315
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
       osx_arm64_mpiopenmpipyamrex_precisionsppython3.11.____cpython:
         CONFIG: osx_arm64_mpiopenmpipyamrex_precisionsppython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -488,6 +598,17 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+      osx_arm64_mpiopenmpipyamrex_precisionsppython3.15.____cp315:
+        CONFIG: osx_arm64_mpiopenmpipyamrex_precisionsppython3.15.____cp315
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+    maxParallel: 50
   timeoutInMinutes: 360
   variables: {}
 
