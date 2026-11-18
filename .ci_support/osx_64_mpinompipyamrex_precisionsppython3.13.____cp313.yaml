@@ -37,7 +37,7 @@ pin_run_as_build:
 pyamrex_precision:
 - sp
 pybind11_abi:
-- '11'
+- '12'
 python:
 - 3.13.* *_cp313
 target_platform:
