@@ -74,6 +74,15 @@ description = "Debug pyamrex-feedstock with variant linux_64_mpimpichpyamrex_pre
 [feature.build.tasks."inspect-linux_64_mpimpichpyamrex_precisiondppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_mpimpichpyamrex_precisiondppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_64_mpimpichpyamrex_precisiondppython3.14.____cp314"
+[feature.build.tasks."build-linux_64_mpimpichpyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_mpimpichpyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-64"
+description = "Build pyamrex-feedstock with variant linux_64_mpimpichpyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_mpimpichpyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_mpimpichpyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-64"
+description = "Debug pyamrex-feedstock with variant linux_64_mpimpichpyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_mpimpichpyamrex_precisiondppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_mpimpichpyamrex_precisiondppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_64_mpimpichpyamrex_precisiondppython3.15.____cp315"
 [feature.build.tasks."build-linux_64_mpimpichpyamrex_precisionsppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_mpimpichpyamrex_precisionsppython3.11.____cpython.yaml --target-platform linux-64"
 description = "Build pyamrex-feedstock with variant linux_64_mpimpichpyamrex_precisionsppython3.11.____cpython directly (without setup scripts)"
@@ -110,6 +119,15 @@ description = "Debug pyamrex-feedstock with variant linux_64_mpimpichpyamrex_pre
 [feature.build.tasks."inspect-linux_64_mpimpichpyamrex_precisionsppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_mpimpichpyamrex_precisionsppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_64_mpimpichpyamrex_precisionsppython3.14.____cp314"
+[feature.build.tasks."build-linux_64_mpimpichpyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_mpimpichpyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-64"
+description = "Build pyamrex-feedstock with variant linux_64_mpimpichpyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_mpimpichpyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_mpimpichpyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-64"
+description = "Debug pyamrex-feedstock with variant linux_64_mpimpichpyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_mpimpichpyamrex_precisionsppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_mpimpichpyamrex_precisionsppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_64_mpimpichpyamrex_precisionsppython3.15.____cp315"
 [feature.build.tasks."build-linux_64_mpinompipyamrex_precisiondppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_mpinompipyamrex_precisiondppython3.11.____cpython.yaml --target-platform linux-64"
 description = "Build pyamrex-feedstock with variant linux_64_mpinompipyamrex_precisiondppython3.11.____cpython directly (without setup scripts)"
@@ -146,6 +164,15 @@ description = "Debug pyamrex-feedstock with variant linux_64_mpinompipyamrex_pre
 [feature.build.tasks."inspect-linux_64_mpinompipyamrex_precisiondppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_mpinompipyamrex_precisiondppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_64_mpinompipyamrex_precisiondppython3.14.____cp314"
+[feature.build.tasks."build-linux_64_mpinompipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_mpinompipyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-64"
+description = "Build pyamrex-feedstock with variant linux_64_mpinompipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_mpinompipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_mpinompipyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-64"
+description = "Debug pyamrex-feedstock with variant linux_64_mpinompipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_mpinompipyamrex_precisiondppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_mpinompipyamrex_precisiondppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_64_mpinompipyamrex_precisiondppython3.15.____cp315"
 [feature.build.tasks."build-linux_64_mpinompipyamrex_precisionsppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_mpinompipyamrex_precisionsppython3.11.____cpython.yaml --target-platform linux-64"
 description = "Build pyamrex-feedstock with variant linux_64_mpinompipyamrex_precisionsppython3.11.____cpython directly (without setup scripts)"
@@ -182,6 +209,15 @@ description = "Debug pyamrex-feedstock with variant linux_64_mpinompipyamrex_pre
 [feature.build.tasks."inspect-linux_64_mpinompipyamrex_precisionsppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_mpinompipyamrex_precisionsppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_64_mpinompipyamrex_precisionsppython3.14.____cp314"
+[feature.build.tasks."build-linux_64_mpinompipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_mpinompipyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-64"
+description = "Build pyamrex-feedstock with variant linux_64_mpinompipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_mpinompipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_mpinompipyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-64"
+description = "Debug pyamrex-feedstock with variant linux_64_mpinompipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_mpinompipyamrex_precisionsppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_mpinompipyamrex_precisionsppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_64_mpinompipyamrex_precisionsppython3.15.____cp315"
 [feature.build.tasks."build-linux_64_mpiopenmpipyamrex_precisiondppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_mpiopenmpipyamrex_precisiondppython3.11.____cpython.yaml --target-platform linux-64"
 description = "Build pyamrex-feedstock with variant linux_64_mpiopenmpipyamrex_precisiondppython3.11.____cpython directly (without setup scripts)"
@@ -218,6 +254,15 @@ description = "Debug pyamrex-feedstock with variant linux_64_mpiopenmpipyamrex_p
 [feature.build.tasks."inspect-linux_64_mpiopenmpipyamrex_precisiondppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_mpiopenmpipyamrex_precisiondppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_64_mpiopenmpipyamrex_precisiondppython3.14.____cp314"
+[feature.build.tasks."build-linux_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-64"
+description = "Build pyamrex-feedstock with variant linux_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-64"
+description = "Debug pyamrex-feedstock with variant linux_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315"
 [feature.build.tasks."build-linux_64_mpiopenmpipyamrex_precisionsppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_mpiopenmpipyamrex_precisionsppython3.11.____cpython.yaml --target-platform linux-64"
 description = "Build pyamrex-feedstock with variant linux_64_mpiopenmpipyamrex_precisionsppython3.11.____cpython directly (without setup scripts)"
@@ -254,6 +299,15 @@ description = "Debug pyamrex-feedstock with variant linux_64_mpiopenmpipyamrex_p
 [feature.build.tasks."inspect-linux_64_mpiopenmpipyamrex_precisionsppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_mpiopenmpipyamrex_precisionsppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_64_mpiopenmpipyamrex_precisionsppython3.14.____cp314"
+[feature.build.tasks."build-linux_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-64"
+description = "Build pyamrex-feedstock with variant linux_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-64"
+description = "Debug pyamrex-feedstock with variant linux_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315"
 [feature.build.tasks."build-linux_aarch64_mpimpichpyamrex_precisiondppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_mpimpichpyamrex_precisiondppython3.11.____cpython.yaml --target-platform linux-aarch64"
 description = "Build pyamrex-feedstock with variant linux_aarch64_mpimpichpyamrex_precisiondppython3.11.____cpython directly (without setup scripts)"
@@ -290,6 +344,15 @@ description = "Debug pyamrex-feedstock with variant linux_aarch64_mpimpichpyamre
 [feature.build.tasks."inspect-linux_aarch64_mpimpichpyamrex_precisiondppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_mpimpichpyamrex_precisiondppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_aarch64_mpimpichpyamrex_precisiondppython3.14.____cp314"
+[feature.build.tasks."build-linux_aarch64_mpimpichpyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_mpimpichpyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-aarch64"
+description = "Build pyamrex-feedstock with variant linux_aarch64_mpimpichpyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_mpimpichpyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_mpimpichpyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-aarch64"
+description = "Debug pyamrex-feedstock with variant linux_aarch64_mpimpichpyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_mpimpichpyamrex_precisiondppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_mpimpichpyamrex_precisiondppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_aarch64_mpimpichpyamrex_precisiondppython3.15.____cp315"
 [feature.build.tasks."build-linux_aarch64_mpimpichpyamrex_precisionsppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_mpimpichpyamrex_precisionsppython3.11.____cpython.yaml --target-platform linux-aarch64"
 description = "Build pyamrex-feedstock with variant linux_aarch64_mpimpichpyamrex_precisionsppython3.11.____cpython directly (without setup scripts)"
@@ -326,6 +389,15 @@ description = "Debug pyamrex-feedstock with variant linux_aarch64_mpimpichpyamre
 [feature.build.tasks."inspect-linux_aarch64_mpimpichpyamrex_precisionsppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_mpimpichpyamrex_precisionsppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_aarch64_mpimpichpyamrex_precisionsppython3.14.____cp314"
+[feature.build.tasks."build-linux_aarch64_mpimpichpyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_mpimpichpyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-aarch64"
+description = "Build pyamrex-feedstock with variant linux_aarch64_mpimpichpyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_mpimpichpyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_mpimpichpyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-aarch64"
+description = "Debug pyamrex-feedstock with variant linux_aarch64_mpimpichpyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_mpimpichpyamrex_precisionsppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_mpimpichpyamrex_precisionsppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_aarch64_mpimpichpyamrex_precisionsppython3.15.____cp315"
 [feature.build.tasks."build-linux_aarch64_mpinompipyamrex_precisiondppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_mpinompipyamrex_precisiondppython3.11.____cpython.yaml --target-platform linux-aarch64"
 description = "Build pyamrex-feedstock with variant linux_aarch64_mpinompipyamrex_precisiondppython3.11.____cpython directly (without setup scripts)"
@@ -362,6 +434,15 @@ description = "Debug pyamrex-feedstock with variant linux_aarch64_mpinompipyamre
 [feature.build.tasks."inspect-linux_aarch64_mpinompipyamrex_precisiondppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_mpinompipyamrex_precisiondppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_aarch64_mpinompipyamrex_precisiondppython3.14.____cp314"
+[feature.build.tasks."build-linux_aarch64_mpinompipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_mpinompipyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-aarch64"
+description = "Build pyamrex-feedstock with variant linux_aarch64_mpinompipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_mpinompipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_mpinompipyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-aarch64"
+description = "Debug pyamrex-feedstock with variant linux_aarch64_mpinompipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_mpinompipyamrex_precisiondppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_mpinompipyamrex_precisiondppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_aarch64_mpinompipyamrex_precisiondppython3.15.____cp315"
 [feature.build.tasks."build-linux_aarch64_mpinompipyamrex_precisionsppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_mpinompipyamrex_precisionsppython3.11.____cpython.yaml --target-platform linux-aarch64"
 description = "Build pyamrex-feedstock with variant linux_aarch64_mpinompipyamrex_precisionsppython3.11.____cpython directly (without setup scripts)"
@@ -398,6 +479,15 @@ description = "Debug pyamrex-feedstock with variant linux_aarch64_mpinompipyamre
 [feature.build.tasks."inspect-linux_aarch64_mpinompipyamrex_precisionsppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_mpinompipyamrex_precisionsppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_aarch64_mpinompipyamrex_precisionsppython3.14.____cp314"
+[feature.build.tasks."build-linux_aarch64_mpinompipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_mpinompipyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-aarch64"
+description = "Build pyamrex-feedstock with variant linux_aarch64_mpinompipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_mpinompipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_mpinompipyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-aarch64"
+description = "Debug pyamrex-feedstock with variant linux_aarch64_mpinompipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_mpinompipyamrex_precisionsppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_mpinompipyamrex_precisionsppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_aarch64_mpinompipyamrex_precisionsppython3.15.____cp315"
 [feature.build.tasks."build-linux_aarch64_mpiopenmpipyamrex_precisiondppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_mpiopenmpipyamrex_precisiondppython3.11.____cpython.yaml --target-platform linux-aarch64"
 description = "Build pyamrex-feedstock with variant linux_aarch64_mpiopenmpipyamrex_precisiondppython3.11.____cpython directly (without setup scripts)"
@@ -434,6 +524,15 @@ description = "Debug pyamrex-feedstock with variant linux_aarch64_mpiopenmpipyam
 [feature.build.tasks."inspect-linux_aarch64_mpiopenmpipyamrex_precisiondppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_mpiopenmpipyamrex_precisiondppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_aarch64_mpiopenmpipyamrex_precisiondppython3.14.____cp314"
+[feature.build.tasks."build-linux_aarch64_mpiopenmpipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_mpiopenmpipyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-aarch64"
+description = "Build pyamrex-feedstock with variant linux_aarch64_mpiopenmpipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_mpiopenmpipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_mpiopenmpipyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-aarch64"
+description = "Debug pyamrex-feedstock with variant linux_aarch64_mpiopenmpipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_mpiopenmpipyamrex_precisiondppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_mpiopenmpipyamrex_precisiondppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_aarch64_mpiopenmpipyamrex_precisiondppython3.15.____cp315"
 [feature.build.tasks."build-linux_aarch64_mpiopenmpipyamrex_precisionsppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_mpiopenmpipyamrex_precisionsppython3.11.____cpython.yaml --target-platform linux-aarch64"
 description = "Build pyamrex-feedstock with variant linux_aarch64_mpiopenmpipyamrex_precisionsppython3.11.____cpython directly (without setup scripts)"
@@ -470,6 +569,15 @@ description = "Debug pyamrex-feedstock with variant linux_aarch64_mpiopenmpipyam
 [feature.build.tasks."inspect-linux_aarch64_mpiopenmpipyamrex_precisionsppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_mpiopenmpipyamrex_precisionsppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_aarch64_mpiopenmpipyamrex_precisionsppython3.14.____cp314"
+[feature.build.tasks."build-linux_aarch64_mpiopenmpipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_mpiopenmpipyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-aarch64"
+description = "Build pyamrex-feedstock with variant linux_aarch64_mpiopenmpipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_mpiopenmpipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_mpiopenmpipyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-aarch64"
+description = "Debug pyamrex-feedstock with variant linux_aarch64_mpiopenmpipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_mpiopenmpipyamrex_precisionsppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_mpiopenmpipyamrex_precisionsppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_aarch64_mpiopenmpipyamrex_precisionsppython3.15.____cp315"
 [feature.build.tasks."build-linux_ppc64le_mpimpichpyamrex_precisiondppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_mpimpichpyamrex_precisiondppython3.11.____cpython.yaml --target-platform linux-ppc64le"
 description = "Build pyamrex-feedstock with variant linux_ppc64le_mpimpichpyamrex_precisiondppython3.11.____cpython directly (without setup scripts)"
@@ -506,6 +614,15 @@ description = "Debug pyamrex-feedstock with variant linux_ppc64le_mpimpichpyamre
 [feature.build.tasks."inspect-linux_ppc64le_mpimpichpyamrex_precisiondppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_mpimpichpyamrex_precisiondppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_ppc64le_mpimpichpyamrex_precisiondppython3.14.____cp314"
+[feature.build.tasks."build-linux_ppc64le_mpimpichpyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_mpimpichpyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-ppc64le"
+description = "Build pyamrex-feedstock with variant linux_ppc64le_mpimpichpyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_ppc64le_mpimpichpyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_ppc64le_mpimpichpyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-ppc64le"
+description = "Debug pyamrex-feedstock with variant linux_ppc64le_mpimpichpyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_ppc64le_mpimpichpyamrex_precisiondppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_mpimpichpyamrex_precisiondppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_ppc64le_mpimpichpyamrex_precisiondppython3.15.____cp315"
 [feature.build.tasks."build-linux_ppc64le_mpimpichpyamrex_precisionsppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_mpimpichpyamrex_precisionsppython3.11.____cpython.yaml --target-platform linux-ppc64le"
 description = "Build pyamrex-feedstock with variant linux_ppc64le_mpimpichpyamrex_precisionsppython3.11.____cpython directly (without setup scripts)"
@@ -542,6 +659,15 @@ description = "Debug pyamrex-feedstock with variant linux_ppc64le_mpimpichpyamre
 [feature.build.tasks."inspect-linux_ppc64le_mpimpichpyamrex_precisionsppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_mpimpichpyamrex_precisionsppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_ppc64le_mpimpichpyamrex_precisionsppython3.14.____cp314"
+[feature.build.tasks."build-linux_ppc64le_mpimpichpyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_mpimpichpyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-ppc64le"
+description = "Build pyamrex-feedstock with variant linux_ppc64le_mpimpichpyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_ppc64le_mpimpichpyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_ppc64le_mpimpichpyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-ppc64le"
+description = "Debug pyamrex-feedstock with variant linux_ppc64le_mpimpichpyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_ppc64le_mpimpichpyamrex_precisionsppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_mpimpichpyamrex_precisionsppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_ppc64le_mpimpichpyamrex_precisionsppython3.15.____cp315"
 [feature.build.tasks."build-linux_ppc64le_mpinompipyamrex_precisiondppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_mpinompipyamrex_precisiondppython3.11.____cpython.yaml --target-platform linux-ppc64le"
 description = "Build pyamrex-feedstock with variant linux_ppc64le_mpinompipyamrex_precisiondppython3.11.____cpython directly (without setup scripts)"
@@ -578,6 +704,15 @@ description = "Debug pyamrex-feedstock with variant linux_ppc64le_mpinompipyamre
 [feature.build.tasks."inspect-linux_ppc64le_mpinompipyamrex_precisiondppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_mpinompipyamrex_precisiondppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_ppc64le_mpinompipyamrex_precisiondppython3.14.____cp314"
+[feature.build.tasks."build-linux_ppc64le_mpinompipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_mpinompipyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-ppc64le"
+description = "Build pyamrex-feedstock with variant linux_ppc64le_mpinompipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_ppc64le_mpinompipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_ppc64le_mpinompipyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-ppc64le"
+description = "Debug pyamrex-feedstock with variant linux_ppc64le_mpinompipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_ppc64le_mpinompipyamrex_precisiondppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_mpinompipyamrex_precisiondppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_ppc64le_mpinompipyamrex_precisiondppython3.15.____cp315"
 [feature.build.tasks."build-linux_ppc64le_mpinompipyamrex_precisionsppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_mpinompipyamrex_precisionsppython3.11.____cpython.yaml --target-platform linux-ppc64le"
 description = "Build pyamrex-feedstock with variant linux_ppc64le_mpinompipyamrex_precisionsppython3.11.____cpython directly (without setup scripts)"
@@ -614,6 +749,15 @@ description = "Debug pyamrex-feedstock with variant linux_ppc64le_mpinompipyamre
 [feature.build.tasks."inspect-linux_ppc64le_mpinompipyamrex_precisionsppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_mpinompipyamrex_precisionsppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_ppc64le_mpinompipyamrex_precisionsppython3.14.____cp314"
+[feature.build.tasks."build-linux_ppc64le_mpinompipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_mpinompipyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-ppc64le"
+description = "Build pyamrex-feedstock with variant linux_ppc64le_mpinompipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_ppc64le_mpinompipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_ppc64le_mpinompipyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-ppc64le"
+description = "Debug pyamrex-feedstock with variant linux_ppc64le_mpinompipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_ppc64le_mpinompipyamrex_precisionsppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_mpinompipyamrex_precisionsppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_ppc64le_mpinompipyamrex_precisionsppython3.15.____cp315"
 [feature.build.tasks."build-linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.11.____cpython.yaml --target-platform linux-ppc64le"
 description = "Build pyamrex-feedstock with variant linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.11.____cpython directly (without setup scripts)"
@@ -650,6 +794,15 @@ description = "Debug pyamrex-feedstock with variant linux_ppc64le_mpiopenmpipyam
 [feature.build.tasks."inspect-linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.14.____cp314"
+[feature.build.tasks."build-linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-ppc64le"
+description = "Build pyamrex-feedstock with variant linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.15.____cp315.yaml --target-platform linux-ppc64le"
+description = "Debug pyamrex-feedstock with variant linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_ppc64le_mpiopenmpipyamrex_precisiondppython3.15.____cp315"
 [feature.build.tasks."build-linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.11.____cpython.yaml --target-platform linux-ppc64le"
 description = "Build pyamrex-feedstock with variant linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.11.____cpython directly (without setup scripts)"
@@ -686,6 +839,15 @@ description = "Debug pyamrex-feedstock with variant linux_ppc64le_mpiopenmpipyam
 [feature.build.tasks."inspect-linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.14.____cp314"
+[feature.build.tasks."build-linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-ppc64le"
+description = "Build pyamrex-feedstock with variant linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.15.____cp315.yaml --target-platform linux-ppc64le"
+description = "Debug pyamrex-feedstock with variant linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant linux_ppc64le_mpiopenmpipyamrex_precisionsppython3.15.____cp315"
 [feature.build.tasks."build-osx_64_mpimpichpyamrex_precisiondppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_mpimpichpyamrex_precisiondppython3.11.____cpython.yaml --target-platform osx-64"
 description = "Build pyamrex-feedstock with variant osx_64_mpimpichpyamrex_precisiondppython3.11.____cpython directly (without setup scripts)"
@@ -722,6 +884,15 @@ description = "Debug pyamrex-feedstock with variant osx_64_mpimpichpyamrex_preci
 [feature.build.tasks."inspect-osx_64_mpimpichpyamrex_precisiondppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_mpimpichpyamrex_precisiondppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant osx_64_mpimpichpyamrex_precisiondppython3.14.____cp314"
+[feature.build.tasks."build-osx_64_mpimpichpyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_mpimpichpyamrex_precisiondppython3.15.____cp315.yaml --target-platform osx-64"
+description = "Build pyamrex-feedstock with variant osx_64_mpimpichpyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_mpimpichpyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_mpimpichpyamrex_precisiondppython3.15.____cp315.yaml --target-platform osx-64"
+description = "Debug pyamrex-feedstock with variant osx_64_mpimpichpyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_mpimpichpyamrex_precisiondppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_mpimpichpyamrex_precisiondppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant osx_64_mpimpichpyamrex_precisiondppython3.15.____cp315"
 [feature.build.tasks."build-osx_64_mpimpichpyamrex_precisionsppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_mpimpichpyamrex_precisionsppython3.11.____cpython.yaml --target-platform osx-64"
 description = "Build pyamrex-feedstock with variant osx_64_mpimpichpyamrex_precisionsppython3.11.____cpython directly (without setup scripts)"
@@ -758,6 +929,15 @@ description = "Debug pyamrex-feedstock with variant osx_64_mpimpichpyamrex_preci
 [feature.build.tasks."inspect-osx_64_mpimpichpyamrex_precisionsppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_mpimpichpyamrex_precisionsppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant osx_64_mpimpichpyamrex_precisionsppython3.14.____cp314"
+[feature.build.tasks."build-osx_64_mpimpichpyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_mpimpichpyamrex_precisionsppython3.15.____cp315.yaml --target-platform osx-64"
+description = "Build pyamrex-feedstock with variant osx_64_mpimpichpyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_mpimpichpyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_mpimpichpyamrex_precisionsppython3.15.____cp315.yaml --target-platform osx-64"
+description = "Debug pyamrex-feedstock with variant osx_64_mpimpichpyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_mpimpichpyamrex_precisionsppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_mpimpichpyamrex_precisionsppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant osx_64_mpimpichpyamrex_precisionsppython3.15.____cp315"
 [feature.build.tasks."build-osx_64_mpinompipyamrex_precisiondppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_mpinompipyamrex_precisiondppython3.11.____cpython.yaml --target-platform osx-64"
 description = "Build pyamrex-feedstock with variant osx_64_mpinompipyamrex_precisiondppython3.11.____cpython directly (without setup scripts)"
@@ -794,6 +974,15 @@ description = "Debug pyamrex-feedstock with variant osx_64_mpinompipyamrex_preci
 [feature.build.tasks."inspect-osx_64_mpinompipyamrex_precisiondppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_mpinompipyamrex_precisiondppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant osx_64_mpinompipyamrex_precisiondppython3.14.____cp314"
+[feature.build.tasks."build-osx_64_mpinompipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_mpinompipyamrex_precisiondppython3.15.____cp315.yaml --target-platform osx-64"
+description = "Build pyamrex-feedstock with variant osx_64_mpinompipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_mpinompipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_mpinompipyamrex_precisiondppython3.15.____cp315.yaml --target-platform osx-64"
+description = "Debug pyamrex-feedstock with variant osx_64_mpinompipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_mpinompipyamrex_precisiondppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_mpinompipyamrex_precisiondppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant osx_64_mpinompipyamrex_precisiondppython3.15.____cp315"
 [feature.build.tasks."build-osx_64_mpinompipyamrex_precisionsppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_mpinompipyamrex_precisionsppython3.11.____cpython.yaml --target-platform osx-64"
 description = "Build pyamrex-feedstock with variant osx_64_mpinompipyamrex_precisionsppython3.11.____cpython directly (without setup scripts)"
@@ -830,6 +1019,15 @@ description = "Debug pyamrex-feedstock with variant osx_64_mpinompipyamrex_preci
 [feature.build.tasks."inspect-osx_64_mpinompipyamrex_precisionsppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_mpinompipyamrex_precisionsppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant osx_64_mpinompipyamrex_precisionsppython3.14.____cp314"
+[feature.build.tasks."build-osx_64_mpinompipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_mpinompipyamrex_precisionsppython3.15.____cp315.yaml --target-platform osx-64"
+description = "Build pyamrex-feedstock with variant osx_64_mpinompipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_mpinompipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_mpinompipyamrex_precisionsppython3.15.____cp315.yaml --target-platform osx-64"
+description = "Debug pyamrex-feedstock with variant osx_64_mpinompipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_mpinompipyamrex_precisionsppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_mpinompipyamrex_precisionsppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant osx_64_mpinompipyamrex_precisionsppython3.15.____cp315"
 [feature.build.tasks."build-osx_64_mpiopenmpipyamrex_precisiondppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_mpiopenmpipyamrex_precisiondppython3.11.____cpython.yaml --target-platform osx-64"
 description = "Build pyamrex-feedstock with variant osx_64_mpiopenmpipyamrex_precisiondppython3.11.____cpython directly (without setup scripts)"
@@ -866,6 +1064,15 @@ description = "Debug pyamrex-feedstock with variant osx_64_mpiopenmpipyamrex_pre
 [feature.build.tasks."inspect-osx_64_mpiopenmpipyamrex_precisiondppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_mpiopenmpipyamrex_precisiondppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant osx_64_mpiopenmpipyamrex_precisiondppython3.14.____cp314"
+[feature.build.tasks."build-osx_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315.yaml --target-platform osx-64"
+description = "Build pyamrex-feedstock with variant osx_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315.yaml --target-platform osx-64"
+description = "Debug pyamrex-feedstock with variant osx_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant osx_64_mpiopenmpipyamrex_precisiondppython3.15.____cp315"
 [feature.build.tasks."build-osx_64_mpiopenmpipyamrex_precisionsppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_mpiopenmpipyamrex_precisionsppython3.11.____cpython.yaml --target-platform osx-64"
 description = "Build pyamrex-feedstock with variant osx_64_mpiopenmpipyamrex_precisionsppython3.11.____cpython directly (without setup scripts)"
@@ -902,6 +1109,15 @@ description = "Debug pyamrex-feedstock with variant osx_64_mpiopenmpipyamrex_pre
 [feature.build.tasks."inspect-osx_64_mpiopenmpipyamrex_precisionsppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_mpiopenmpipyamrex_precisionsppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant osx_64_mpiopenmpipyamrex_precisionsppython3.14.____cp314"
+[feature.build.tasks."build-osx_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315.yaml --target-platform osx-64"
+description = "Build pyamrex-feedstock with variant osx_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315.yaml --target-platform osx-64"
+description = "Debug pyamrex-feedstock with variant osx_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant osx_64_mpiopenmpipyamrex_precisionsppython3.15.____cp315"
 [feature.build.tasks."build-osx_arm64_mpimpichpyamrex_precisiondppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_mpimpichpyamrex_precisiondppython3.11.____cpython.yaml --target-platform osx-arm64"
 description = "Build pyamrex-feedstock with variant osx_arm64_mpimpichpyamrex_precisiondppython3.11.____cpython directly (without setup scripts)"
@@ -938,6 +1154,15 @@ description = "Debug pyamrex-feedstock with variant osx_arm64_mpimpichpyamrex_pr
 [feature.build.tasks."inspect-osx_arm64_mpimpichpyamrex_precisiondppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_mpimpichpyamrex_precisiondppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant osx_arm64_mpimpichpyamrex_precisiondppython3.14.____cp314"
+[feature.build.tasks."build-osx_arm64_mpimpichpyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_mpimpichpyamrex_precisiondppython3.15.____cp315.yaml --target-platform osx-arm64"
+description = "Build pyamrex-feedstock with variant osx_arm64_mpimpichpyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_arm64_mpimpichpyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_mpimpichpyamrex_precisiondppython3.15.____cp315.yaml --target-platform osx-arm64"
+description = "Debug pyamrex-feedstock with variant osx_arm64_mpimpichpyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_arm64_mpimpichpyamrex_precisiondppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_mpimpichpyamrex_precisiondppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant osx_arm64_mpimpichpyamrex_precisiondppython3.15.____cp315"
 [feature.build.tasks."build-osx_arm64_mpimpichpyamrex_precisionsppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_mpimpichpyamrex_precisionsppython3.11.____cpython.yaml --target-platform osx-arm64"
 description = "Build pyamrex-feedstock with variant osx_arm64_mpimpichpyamrex_precisionsppython3.11.____cpython directly (without setup scripts)"
@@ -974,6 +1199,15 @@ description = "Debug pyamrex-feedstock with variant osx_arm64_mpimpichpyamrex_pr
 [feature.build.tasks."inspect-osx_arm64_mpimpichpyamrex_precisionsppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_mpimpichpyamrex_precisionsppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant osx_arm64_mpimpichpyamrex_precisionsppython3.14.____cp314"
+[feature.build.tasks."build-osx_arm64_mpimpichpyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_mpimpichpyamrex_precisionsppython3.15.____cp315.yaml --target-platform osx-arm64"
+description = "Build pyamrex-feedstock with variant osx_arm64_mpimpichpyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_arm64_mpimpichpyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_mpimpichpyamrex_precisionsppython3.15.____cp315.yaml --target-platform osx-arm64"
+description = "Debug pyamrex-feedstock with variant osx_arm64_mpimpichpyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_arm64_mpimpichpyamrex_precisionsppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_mpimpichpyamrex_precisionsppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant osx_arm64_mpimpichpyamrex_precisionsppython3.15.____cp315"
 [feature.build.tasks."build-osx_arm64_mpinompipyamrex_precisiondppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_mpinompipyamrex_precisiondppython3.11.____cpython.yaml --target-platform osx-arm64"
 description = "Build pyamrex-feedstock with variant osx_arm64_mpinompipyamrex_precisiondppython3.11.____cpython directly (without setup scripts)"
@@ -1010,6 +1244,15 @@ description = "Debug pyamrex-feedstock with variant osx_arm64_mpinompipyamrex_pr
 [feature.build.tasks."inspect-osx_arm64_mpinompipyamrex_precisiondppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_mpinompipyamrex_precisiondppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant osx_arm64_mpinompipyamrex_precisiondppython3.14.____cp314"
+[feature.build.tasks."build-osx_arm64_mpinompipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_mpinompipyamrex_precisiondppython3.15.____cp315.yaml --target-platform osx-arm64"
+description = "Build pyamrex-feedstock with variant osx_arm64_mpinompipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_arm64_mpinompipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_mpinompipyamrex_precisiondppython3.15.____cp315.yaml --target-platform osx-arm64"
+description = "Debug pyamrex-feedstock with variant osx_arm64_mpinompipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_arm64_mpinompipyamrex_precisiondppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_mpinompipyamrex_precisiondppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant osx_arm64_mpinompipyamrex_precisiondppython3.15.____cp315"
 [feature.build.tasks."build-osx_arm64_mpinompipyamrex_precisionsppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_mpinompipyamrex_precisionsppython3.11.____cpython.yaml --target-platform osx-arm64"
 description = "Build pyamrex-feedstock with variant osx_arm64_mpinompipyamrex_precisionsppython3.11.____cpython directly (without setup scripts)"
@@ -1046,6 +1289,15 @@ description = "Debug pyamrex-feedstock with variant osx_arm64_mpinompipyamrex_pr
 [feature.build.tasks."inspect-osx_arm64_mpinompipyamrex_precisionsppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_mpinompipyamrex_precisionsppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant osx_arm64_mpinompipyamrex_precisionsppython3.14.____cp314"
+[feature.build.tasks."build-osx_arm64_mpinompipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_mpinompipyamrex_precisionsppython3.15.____cp315.yaml --target-platform osx-arm64"
+description = "Build pyamrex-feedstock with variant osx_arm64_mpinompipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_arm64_mpinompipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_mpinompipyamrex_precisionsppython3.15.____cp315.yaml --target-platform osx-arm64"
+description = "Debug pyamrex-feedstock with variant osx_arm64_mpinompipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_arm64_mpinompipyamrex_precisionsppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_mpinompipyamrex_precisionsppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant osx_arm64_mpinompipyamrex_precisionsppython3.15.____cp315"
 [feature.build.tasks."build-osx_arm64_mpiopenmpipyamrex_precisiondppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_mpiopenmpipyamrex_precisiondppython3.11.____cpython.yaml --target-platform osx-arm64"
 description = "Build pyamrex-feedstock with variant osx_arm64_mpiopenmpipyamrex_precisiondppython3.11.____cpython directly (without setup scripts)"
@@ -1082,6 +1334,15 @@ description = "Debug pyamrex-feedstock with variant osx_arm64_mpiopenmpipyamrex_
 [feature.build.tasks."inspect-osx_arm64_mpiopenmpipyamrex_precisiondppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_mpiopenmpipyamrex_precisiondppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant osx_arm64_mpiopenmpipyamrex_precisiondppython3.14.____cp314"
+[feature.build.tasks."build-osx_arm64_mpiopenmpipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_mpiopenmpipyamrex_precisiondppython3.15.____cp315.yaml --target-platform osx-arm64"
+description = "Build pyamrex-feedstock with variant osx_arm64_mpiopenmpipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_arm64_mpiopenmpipyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_mpiopenmpipyamrex_precisiondppython3.15.____cp315.yaml --target-platform osx-arm64"
+description = "Debug pyamrex-feedstock with variant osx_arm64_mpiopenmpipyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_arm64_mpiopenmpipyamrex_precisiondppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_mpiopenmpipyamrex_precisiondppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant osx_arm64_mpiopenmpipyamrex_precisiondppython3.15.____cp315"
 [feature.build.tasks."build-osx_arm64_mpiopenmpipyamrex_precisionsppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_mpiopenmpipyamrex_precisionsppython3.11.____cpython.yaml --target-platform osx-arm64"
 description = "Build pyamrex-feedstock with variant osx_arm64_mpiopenmpipyamrex_precisionsppython3.11.____cpython directly (without setup scripts)"
@@ -1118,6 +1379,15 @@ description = "Debug pyamrex-feedstock with variant osx_arm64_mpiopenmpipyamrex_
 [feature.build.tasks."inspect-osx_arm64_mpiopenmpipyamrex_precisionsppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_mpiopenmpipyamrex_precisionsppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant osx_arm64_mpiopenmpipyamrex_precisionsppython3.14.____cp314"
+[feature.build.tasks."build-osx_arm64_mpiopenmpipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_mpiopenmpipyamrex_precisionsppython3.15.____cp315.yaml --target-platform osx-arm64"
+description = "Build pyamrex-feedstock with variant osx_arm64_mpiopenmpipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_arm64_mpiopenmpipyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_mpiopenmpipyamrex_precisionsppython3.15.____cp315.yaml --target-platform osx-arm64"
+description = "Debug pyamrex-feedstock with variant osx_arm64_mpiopenmpipyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_arm64_mpiopenmpipyamrex_precisionsppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_mpiopenmpipyamrex_precisionsppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant osx_arm64_mpiopenmpipyamrex_precisionsppython3.15.____cp315"
 [feature.build.tasks."build-win_64_pyamrex_precisiondppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_pyamrex_precisiondppython3.11.____cpython.yaml --target-platform win-64"
 description = "Build pyamrex-feedstock with variant win_64_pyamrex_precisiondppython3.11.____cpython directly (without setup scripts)"
@@ -1154,6 +1424,15 @@ description = "Debug pyamrex-feedstock with variant win_64_pyamrex_precisiondppy
 [feature.build.tasks."inspect-win_64_pyamrex_precisiondppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_pyamrex_precisiondppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant win_64_pyamrex_precisiondppython3.14.____cp314"
+[feature.build.tasks."build-win_64_pyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_pyamrex_precisiondppython3.15.____cp315.yaml --target-platform win-64"
+description = "Build pyamrex-feedstock with variant win_64_pyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_pyamrex_precisiondppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_pyamrex_precisiondppython3.15.____cp315.yaml --target-platform win-64"
+description = "Debug pyamrex-feedstock with variant win_64_pyamrex_precisiondppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_pyamrex_precisiondppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_pyamrex_precisiondppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant win_64_pyamrex_precisiondppython3.15.____cp315"
 [feature.build.tasks."build-win_64_pyamrex_precisionsppython3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_pyamrex_precisionsppython3.11.____cpython.yaml --target-platform win-64"
 description = "Build pyamrex-feedstock with variant win_64_pyamrex_precisionsppython3.11.____cpython directly (without setup scripts)"
@@ -1190,6 +1469,15 @@ description = "Debug pyamrex-feedstock with variant win_64_pyamrex_precisionsppy
 [feature.build.tasks."inspect-win_64_pyamrex_precisionsppython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_pyamrex_precisionsppython3.14.____cp314.yaml"
 description = "List contents of pyamrex-feedstock packages built for variant win_64_pyamrex_precisionsppython3.14.____cp314"
+[feature.build.tasks."build-win_64_pyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_pyamrex_precisionsppython3.15.____cp315.yaml --target-platform win-64"
+description = "Build pyamrex-feedstock with variant win_64_pyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_pyamrex_precisionsppython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_pyamrex_precisionsppython3.15.____cp315.yaml --target-platform win-64"
+description = "Debug pyamrex-feedstock with variant win_64_pyamrex_precisionsppython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_pyamrex_precisionsppython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_pyamrex_precisionsppython3.15.____cp315.yaml"
+description = "List contents of pyamrex-feedstock packages built for variant win_64_pyamrex_precisionsppython3.15.____cp315"
 
 [environments]
 build = ["build"]
